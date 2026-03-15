@@ -19,7 +19,7 @@ export default function BankDetailsPage() {
     }
     setLoading(true); setError(''); setSuccess('');
     try {
-      await api.post('/bank-details/', form);
+      await api.post('bank-details/', form);
       setHasBankDetails(true);
       setSuccess('Bank details saved successfully.');
     } catch (e) {

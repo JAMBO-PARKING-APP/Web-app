@@ -42,7 +42,7 @@ export default function DashboardPage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    api.get('/dashboard/')
+    api.get('dashboard/')
       .then(res => setData(res.data))
       .catch(() => setError('Failed to load dashboard. Please try again.'))
       .finally(() => setLoading(false));

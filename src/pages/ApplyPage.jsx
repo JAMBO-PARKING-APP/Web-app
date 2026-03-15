@@ -29,6 +29,7 @@ export default function ApplyPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [selectedPos, setSelectedPos] = useState(null);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
   const fileRef = useRef();
 
   const [form, setForm] = useState({
@@ -69,7 +70,10 @@ export default function ApplyPage() {
         if (k === 'documents') { if (v) fd.append(k, v); }
         else fd.append(k, v);
       });
-      const res = await api.post('/apply/', fd, {
+      // Add acceptance timestamp or boolean if backend requires
+      fd.append('accepted_terms', acceptedTerms);
+      
+      const res = await api.post('apply/', fd, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       navigate('/apply/success', { state: { applicationId: res.data.application_id } });
@@ -245,6 +249,25 @@ export default function ApplyPage() {
                   <input type="file" ref={fileRef} style={{ color: 'var(--text-secondary)', fontSize: 14 }}
                     onChange={e => set('documents', e.target.files[0])} />
                 </div>
+
+                <div className="terms-section">
+                  <h3>Terms and Conditions</h3>
+                  <div className="terms-content">
+                    <p>By listing your space on Jambo Parking, you agree to the following:</p>
+                    <ul>
+                      <li><strong>Accuracy:</strong> You warrant that all information provided about the zone (location, rates, slots) is accurate.</li>
+                      <li><strong>Ownership:</strong> You confirm you own or have legal authority to lease/list the parking space.</li>
+                      <li><strong>Safety:</strong> You are responsible for ensuring the space is safe, accessible, and maintained.</li>
+                      <li><strong>Compliance:</strong> You agree to comply with all local laws and regulations regarding parking and business operations.</li>
+                      <li><strong>Platform Fees:</strong> You agree to the platform's commission structure on all bookings made through Jambo Parking.</li>
+                      <li><strong>Termination:</strong> Jambo Parking reserves the right to suspend or remove any listing that violates these terms.</li>
+                    </ul>
+                  </div>
+                  <label className="form-checkbox" style={{ marginTop: 16 }}>
+                    <input type="checkbox" checked={acceptedTerms} onChange={e => setAcceptedTerms(e.target.checked)} />
+                    <span style={{ fontWeight: 600 }}>I have read and agree to the Terms and Conditions</span>
+                  </label>
+                </div>
               </div>
             )}
 
@@ -255,7 +278,7 @@ export default function ApplyPage() {
               }
               {step < STEPS.length - 1
                 ? <button className="btn-primary" onClick={handleNext}><span>Next →</span></button>
-                : <button className="btn-primary" onClick={handleSubmit} disabled={loading}>
+                : <button className="btn-primary" onClick={handleSubmit} disabled={loading || !acceptedTerms}>
                     <span>{loading ? 'Submitting...' : 'Submit Application'}</span>
                   </button>
               }

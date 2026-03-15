@@ -59,7 +59,7 @@ export default function AddZonePage() {
     };
 
     try {
-      const res = await api.post('/zones/apply/', payload);
+      const res = await api.post('zones/apply/', payload);
       setSuccessMsg(`Success! Your zone application (${res.data.application_id}) has been submitted and is pending approval.`);
       setFormData({
         proposed_name: '', address: '', total_slots: '', proposed_hourly_rate: '',

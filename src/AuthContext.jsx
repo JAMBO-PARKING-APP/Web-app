@@ -3,7 +3,8 @@ import axios from 'axios';
 
 const BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '');
 
-export const api = axios.create({ baseURL: `${BASE_URL}/api/partner` });
+// Ensure baseURL ends with /api/partner/ for correct relative path usage
+export const api = axios.create({ baseURL: `${BASE_URL}/api/partner/` });
 
 // Attach JWT to every request
 api.interceptors.request.use(config => {
@@ -35,7 +36,7 @@ export function AuthProvider({ children }) {
   const [hasBankDetails, setHasBankDetails] = useState(false);
 
   const login = useCallback(async (email, password) => {
-    const res = await api.post('/login/', { email, password });
+    const res = await api.post('login/', { email, password });
     const { access, refresh, user: userData, has_bank_details } = res.data;
     localStorage.setItem('partner_access', access);
     localStorage.setItem('partner_refresh', refresh);

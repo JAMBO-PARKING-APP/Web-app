@@ -13,7 +13,7 @@ export default function StatusPage() {
     if (!appId.trim()) { setError('Please enter an Application ID.'); return; }
     setLoading(true); setError(''); setResult(null);
     try {
-      const res = await api.get(`/status/${appId.trim()}/`);
+      const res = await api.get(`status/${appId.trim()}/`);
       setResult(res.data);
     } catch (e) {
       if (e.response?.status === 404) setError('No application found with this ID. Please check and try again.');
