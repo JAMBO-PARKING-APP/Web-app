@@ -1,0 +1,544 @@
+{
+  "navbar": {
+    "logo": "Space Park",
+    "howItWorks": "Jinsi Inavyofanya Kazi",
+    "benefits": "Faida",
+    "getApp": "Pata Programu",
+    "checkStatus": "Angalia Hali",
+    "partnerLogin": "Kuingia kwa Washirika",
+    "backToHome": "Rudi Nyumbani"
+  },
+  "hero": {
+    "badge": "Pata kipato cha ziada kutoka kwa nafasi yako ya maegesho",
+    "title": "Badilisha Nafasi Yako Kuwa Kipato Halisi",
+    "sub": "Orodhesha nafasi yako ya maegesho kwenye Space Park na upate pesa kila wakati mtu anapopaki. Uchambuzi wa moja kwa moja, malipo ya kiotomatiki, na udhibiti kamili — yote kwenye dashibodi yako ya mshirika.",
+    "applyNow": "Omba Sasa — Bure",
+    "learnHow": "Jifunze Jinsi Inavyofanya Kazi"
+  },
+  "stats": {
+    "zones": "Maeneo ya Washirika",
+    "parkers": "Wapaki wa Kila Mwezi",
+    "commission": "Tume Pekee",
+    "approval": "Muda wa Kuidhinishwa"
+  },
+  "process": {
+    "eyebrow": "Mchakato Rahisi",
+    "title": "Kuanza kwa Hatua 3",
+    "sub": "Orodhesha nafasi yako ya maegesho na uanze kupata — hakuna utaalamu wa kiufundi unaohitajika",
+    "step1": {
+      "label": "Hatua ya 1",
+      "title": "Tuma Ombi Lako",
+      "desc": "Jaza maelezo ya nafasi yako, weka mahali pako kwenye ramani, na upakie uthibitisho wa umiliki — inachukua chini ya dakika 5."
+    },
+    "step2": {
+      "label": "Hatua ya 2",
+      "title": "Idhinishwa kwa Siku Chache",
+      "desc": "Timu yetu hukagua ndani ya siku 2-5 za kazi. Angalia hali yako kwa kutumia Kitambulisho cha Ombi lako. Utapata vitambulisho vya kuingia kwa barua pepe."
+    },
+    "step3": {
+      "label": "Hatua ya 3",
+      "title": "Pata Pesa Kiotomatiki",
+      "desc": "Eneo lako linaanza kufanya kazi mara moja. Fuatilia mapato, vipindi, na utendaji kutoka kwa dashibodi yako maalum ya mshirika."
+    },
+    "guide": "Angalia mwongozo kamili"
+  },
+  "benefits": {
+    "eyebrow": "Kwa nini Space Park",
+    "title": "Kila Kitu Unachohitaji Ili Kufanikiwa",
+    "card1": {
+      "title": "Weka 90% ya Mapato",
+      "desc": "Tunatoza tume ya wazi ya 10% — hakuna ada zilizofichwa, hakuna gharama za usanidi, hakuna malipo ya kila mwezi. Unachopata ni chako."
+    },
+    "card2": {
+      "title": "Uchambuzi wa Moja kwa Moja",
+      "desc": "Fuatilia viwango vya umiliki, historia ya vipindi, na mapato ya kila siku ukiwa na dashibodi nzuri iliyoundwa kwa ajili ya mshirika."
+    },
+    "card3": {
+      "title": "Malipo ya Kiotomatiki ya Benki",
+      "desc": "Unganisha akaunti yako ya benki mara moja na upokee amana za kiotomatiki — hakuna mchakato wa kutoa pesa mwenyewe unahitajika."
+    },
+    "card4": {
+      "title": "Kuonekana kwa Programu Mara Moja",
+      "desc": "Eneo lako linaonekana kwenye programu ya simu ya Space Park mara tu linapoidhinishwa, likionekana na maelfu ya madereva wanaotafuta maegesho kila siku."
+    },
+    "card5": {
+      "title": "Imethibitishwa na Kuaminika",
+      "desc": "Kila nafasi iliyoorodheshwa inathibitishwa na timu yetu, ikiwapa madereva ujasiri na kuendesha umiliki wa juu wa eneo lako."
+    },
+    "card6": {
+      "title": "Usimamizi wa Kujihudumia",
+      "desc": "Sasisha kiwango chako cha saa, saa za kazi, na maelezo ya eneo kutoka kwa dashibodi yako wakati wowote, bila kuhitaji kuwasiliana na usaidizi."
+    }
+  },
+  "mobile": {
+    "eyebrow": "Programu ya Simu",
+    "title": "Madereva Wanakupata kwenye Space Park",
+    "sub": "Eneo lako lililoorodheshwa linaonekana mara moja kwa madereva wanaotumia programu ya Space Park — tafuta, paki na ulipe yote katika sehemu moja.",
+    "card1": {
+      "title": "Tafuta Maegesho",
+      "desc": "Madereva hutafuta maeneo yanayopatikana karibu na unakoenda kwa wakati halisi."
+    },
+    "card2": {
+      "title": "Malipo Bila Fedha",
+      "desc": "Kila kipindi kinalipwa kidijitali — hakuna haja ya kushughulikia pesa taslimu kwa upande wako."
+    },
+    "card3": {
+      "title": "Ufuatiliaji wa Kipindi",
+      "desc": "Anza, ongeza muda na msimu wa vipindi vya maegesho kutoka kwa programu ukiwa na kumbukumbu kamili ya ukaguzi."
+    },
+    "card4": {
+      "title": "Arifa za Papo Hapo",
+      "desc": "Madereva hupata vikumbusho na wewe unapata arifa za kipindi — zote kwa njia ya kiotomatiki kabisa."
+    }
+  },
+  "cta": {
+    "title": "Uko Tayari Kuanza Kupata?",
+    "sub": "Jiunge na mamia ya wamiliki wa nafasi za maegesho ambao tayari wanapata pesa kwenye Space Park. Zero gharama za kutuma ombi.",
+    "apply": "Omba Bure",
+    "status": "Angalia Hali ya Ombi"
+  },
+  "contact": {
+    "title": "Una Maswali?",
+    "sub": "Tuma maswali yoyote uliyo nayo na timu yetu itakuwasiliana."
+  },
+  "footer": {
+    "desc": "Njia bora ya kupata pesa kutokana na nafasi yako ya maegesho. Ungana na maelfu ya madereva na upate pesa kiotomatiki.",
+    "portal": "Tovuti ya Washirika",
+    "legal": "Sheria",
+    "contactSupport": "Wasiliana na Usaidizi",
+    "rights": "Haki zote zimehifadhiwa.",
+    "privacy": "Faragha",
+    "terms": "Sheria na Masharti"
+  },
+  "apply": {
+    "title": "Omba Kuorodhesha Nafasi Yako",
+    "subtitle": "Jaza fomu hapa chini ili kupata eneo lako la maegesho kwenye Jambo Parking",
+    "steps": {
+      "personal": "Maelezo ya Kibinafsi",
+      "zone": "Maelezo ya Eneo",
+      "pin": "Weka Mahali",
+      "submit": "Nyaraka na Tuma"
+    },
+    "personal": {
+      "title": "Maelezo Yako ya Kibinafsi",
+      "name": "Jina Kamili",
+      "email": "Barua Pepe",
+      "phone": "Nambari ya Simu",
+      "namePlaceholder": "John Kamau",
+      "emailPlaceholder": "john@example.com",
+      "phonePlaceholder": "+254712345678"
+    },
+    "zone": {
+      "title": "Maelezo ya Eneo",
+      "name": "Jina la Eneo Linalopendekezwa",
+      "address": "Anwani",
+      "slots": "Jumla ya Nafasi za Maegesho",
+      "rate": "Kiwango cha Saa (Sarafu ya Ndani)",
+      "hours": "Saa za Kazi",
+      "surface": "Aina ya Uso",
+      "surfaceOptions": {
+        "paved": "Iliyopigwa / Zege",
+        "gravel": "Kokoto / Udongo",
+        "indoor": "Ndani / Gereji"
+      },
+      "security": "Mlinzi wa usalama mahali hapo",
+      "cctv": "Kamera za CCTV zilizowekwa",
+      "instructions": "Maelekezo ya Kuingia (hiari)",
+      "instructionsPlaceholder": "Madereva wanapaswa kupata au kuingia vipi eneo hili?"
+    },
+    "map": {
+      "title": "Weka Mahali pa Eneo Lako",
+      "sub": "Bonyeza kwenye ramani ili kuweka alama mahali ambapo nafasi yako ya maegesho iko.",
+      "success": "Mahali pamewekwa alama kwenye {{lat}}, {{lng}}"
+    },
+    "review": {
+      "title": "Kagua na Tuma",
+      "sub": "Pakia uthibitisho wa umiliki (LAZIMA), kisha tuma ombi lako.",
+      "summary": {
+        "applicant": "Mwombaji",
+        "email": "Barua Pepe",
+        "phone": "Simu",
+        "zoneName": "Jina la Eneo",
+        "address": "Anwani",
+        "slots": "Nafasi",
+        "rate": "Kiwango cha Saa",
+        "hours": "Muda",
+        "location": "Mahali"
+      },
+      "upload": "Uthibitisho wa Umiliki / Kitambulisho (LAZIMA)",
+      "terms": "Sheria na Masharti",
+      "agree": "Nimesoma na kukubaliana na Sheria na Masharti"
+    },
+    "nav": {
+      "back": "Rudi",
+      "next": "Inayofuata",
+      "submitting": "Inatuma Ombi...",
+      "submit": "Tuma Ombi"
+    },
+    "error": {
+      "personal": "Tafadhali jaza maelezo yote ya kibinafsi.",
+      "zone": "Tafadhali jaza maelezo yote ya eneo.",
+      "pin": "Tafadhali bonyeza kwenye ramani ili kuweka alama mahali pa eneo lako.",
+      "upload": "Tafadhali pakia uthibitisho wa umiliki (PNG, JPG, au PDF).",
+      "generic": "Uwasilishaji umeshindwa. Tafadhali jaribu tena."
+    }
+  },
+  "locate": {
+    "title": "Nitafute",
+    "here": "Upo hapa",
+    "error": "Ufikiaji wa eneo umekataliwa au haupatikani."
+  },
+  "addZone": {
+    "title": "Ongeza Eneo Jipya",
+    "sub": "Tuma ombi la kuongeza eneo lingine la maegesho chini ya akaunti yako.",
+    "subtitle": "Tuma ombi la kuongeza eneo lingine la maegesho chini ya akaunti yako.",
+    "successTitle": "Ombi la Eneo Limetumwa!",
+    "successMsg": "Mafanikio! Ombi la eneo lako ({{id}}) limetumwa na linasubiri kuidhinishwa.",
+    "returnBtn": "Rudi kwenye Dashibodi",
+    "form": {
+      "name": "Jina la Eneo Linalopendekezwa",
+      "namePlaceholder": "mfano. Tawi la Westlands",
+      "address": "Anwani ya Kimwili",
+      "addressPlaceholder": "Jina la Mtaa, Eneo",
+      "slots": "Jumla ya Nafasi Zinazopatikana",
+      "slotsPlaceholder": "Idadi ya nafasi",
+      "rate": "Kiwango cha Saa kinachopendekezwa (KES/GHS)",
+      "ratePlaceholder": "mfano. 150.00",
+      "hoursPlaceholder": "mfano. 24/7 au saa 2 asubuhi - saa 12 jioni",
+      "map": "Weka Mahali kwenye Ramani",
+      "mapSub": "Bonyeza mahali popote kwenye ramani ili kuweka eneo lako la maegesho kwa usahihi.",
+      "mapLocation": {
+        "label": "Weka Mahali kwenye Ramani",
+        "instruction": "Bonyeza mahali popote kwenye ramani ili kuweka eneo lako la maegesho kwa usahihi."
+      },
+      "parkingSurface": {
+        "label": "Uso wa Maegesho"
+      },
+      "surface": "Uso wa Maegesho",
+      "hours": "Saa za Kazi",
+      "security": "Usalama Mahali hapo",
+      "cctv": "Uangalizi wa CCTV",
+      "submit": "Tuma Ombi la Eneo"
+    },
+    "nav": {
+      "submitting": "Inatuma Ombi...",
+      "submit": "Tuma Ombi la Eneo"
+    },
+    "errorMsg": "Uwasilishaji umeshindwa. Tafadhali kagua maingizo yako."
+  },
+  "login": {
+    "title": "Tovuti ya Washirika",
+    "subtitle": "Ingia ili kudhibiti eneo lako la maegesho",
+    "email": "Anwani ya Barua Pepe",
+    "password": "Nenosiri",
+    "signin": "Ingia",
+    "signingIn": "Inaingia...",
+    "noAccount": "Hauna akaunti?",
+    "applyLink": "Omba kuwa mshirika",
+    "statusLink": "Angalia hali ya ombi lako",
+    "error": "Imeshindwa kuingia. Tafadhali kagua vitambulisho vyako."
+  },
+  "sidebar": {
+    "dashboard": "Dashibodi",
+    "addZone": "Ongeza Eneo Jipya",
+    "bankDetails": "Maelezo ya Benki",
+    "changePassword": "Badilisha Nenosiri",
+    "darkMode": "Hali ya Giza",
+    "lightMode": "Hali ya Mwanga",
+    "signOut": "Ondoka",
+    "role": "Mmiliki wa Eneo",
+    "owner": "Mmiliki wa Eneo"
+  },
+  "dashboard": {
+    "title": "Dashibodi",
+    "welcome": "Karibu tena! Hivi ndivyo nafasi yako inavyofanya kazi.",
+    "loading": "Inapakia dashibodi yako...",
+    "error": "Imeshindwa kupakia dashibodi. Tafadhali jaribu tena.",
+    "stats": {
+      "totalEarnings": "Jumla ya Mapato",
+      "thisMonth": "Mwezi Huu",
+      "today": "Leo",
+      "activeSessions": "Vipindi Vinavyofanya Kazi",
+      "zones": "Maeneo",
+      "allTime": "Muda wote",
+      "currentMonth": "Mwezi huu",
+      "todaySub": "Mapato ya leo",
+      "activeSub": "{{count}} leo",
+      "zonesSub": "Maeneo yanayotumika"
+    },
+    "charts": {
+      "earningsTitle": "Mapato — Siku 30 Zilizopita",
+      "noData": "Bado hakuna data ya mapato. Mapato yataonekana hapa vipindi vitakapokamilika.",
+      "revenueSplit": "Mgawanyo wa Mapato kwa Eneo"
+    },
+    "table": {
+      "zonesTitle": "Maeneo Yako",
+      "colZone": "Eneo",
+      "colSlots": "Nafasi",
+      "colRate": "Kiwango cha Saa",
+      "colActive": "Vipindi Vinavyotumika",
+      "colOccupancy": "Umiliki",
+      "colCommission": "Tume",
+      "sessionsTitle": "Vipindi vya Hivi Karibuni",
+      "colVehicle": "Gari",
+      "colStart": "Muda wa Kuanza",
+      "colStatus": "Hali",
+      "colAmount": "Kiasi",
+      "noSessions": "Bado hakuna vipindi. Vipindi vitaonekana hapa madereva watapoanza kupaki."
+    }
+  },
+  "success": {
+    "title": "Ombi Limetumwa!",
+    "subtitle": "Ombi la eneo lako limepokelewa. Timu yetu italikagua ndani ya siku 2–5 za kazi na utajulishwa kwa barua pepe.",
+    "appIdLabel": "Kitambulisho chako cha Ombi",
+    "copyId": "Nakili ID",
+    "copied": "Imenakiliwa!",
+    "saveIdTip": "Hifadhi ID hii — utaihitaji ili kuangalia hali ya ombi lako",
+    "checkStatus": "Angalia Hali",
+    "backHome": "Rudi Nyumbani"
+  },
+  "status": {
+    "title": "Angalia Hali ya Ombi",
+    "subtitle": "Ingiza Kitambulisho chako cha Ombi ili kuona hali ya sasa ya uwasilishaji wako",
+    "label": "Kitambulisho cha Ombi",
+    "placeholder": "mfano. a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "checking": "Inakagua...",
+    "checkBtn": "Angalia Hali",
+    "error": {
+      "empty": "Tafadhali ingiza Kitambulisho cha Ombi.",
+      "notFound": "Hakuna ombi lililopatikana kwa ID hii. Tafadhali kagua na ujaribu tena.",
+      "generic": "Kuna kitu kimeenda vibaya. Tafadhali jaribu tena."
+    },
+    "states": {
+      "pending": {
+        "label": "Inakaguliwa",
+        "msg": "Ombi lako linakaguliwa na timu yetu. Hii kawaida huchukua siku 2–5 za kazi."
+      },
+      "approved": {
+        "label": "Imekubaliwa",
+        "msg": "Hongera! Eneo lako limeidhinishwa na sasa liko hewani. Angalia barua pepe yako kwa vitambulisho vya kuingia."
+      },
+      "rejected": {
+        "label": "Haijakubaliwa",
+        "msg": "Kwa bahati mbaya ombi lako halikuidhinishwa kwa wakati huu. Tafadhali kagua maelezo hapa chini au wasiliana na usaidizi."
+      }
+    },
+    "notes": "Maelezo ya Msimamizi:",
+    "submittedOn": "Iliwasilishwa mnamo {{date}}",
+    "loginBtn": "→ Ingia kwenye Dashibodi ya Mshirika"
+  },
+  "bank": {
+    "title": "Maelezo ya Benki",
+    "subtitle": "Dhibiti akaunti yako kwa ajili ya kupokea malipo",
+    "info": "Habari hii inawekwa salama na kutumika tu kwa kuweka mapato yako ya maegesho.",
+    "bankName": "Jina la Benki",
+    "bankNamePlaceholder": "mfano. Benki ya KCB, Benki ya Equity",
+    "accountNumber": "Nambari ya Akaunti",
+    "accountNumberPlaceholder": "Nambari yako ya akaunti ya benki",
+    "accountHolder": "Jina la Mmiliki wa Akaunti",
+    "accountHolderPlaceholder": "Jina kama linavyoonekana kwenye akaunti",
+    "saveBtn": "Hifadhi Maelezo ya Benki",
+    "saving": "Inahifadhi...",
+    "error": {
+      "required": "Sehemu zote ni lazima zijazwe.",
+      "generic": "Imeshindwa kuhifadhi maelezo ya benki."
+    },
+    "success": "Maelezo ya benki yamehifadhiwa kwa mafanikio."
+  },
+  "password": {
+    "title": "Badilisha Nenosiri",
+    "subtitle": "Sasisha nenosiri la akaunti yako ili kuliweka salama",
+    "current": "Nenosiri la Sasa",
+    "currentPlaceholder": "Nenosiri lako la sasa",
+    "new": "Nenosiri Jipya",
+    "newPlaceholder": "Angalau herufi 8",
+    "confirm": "Thibitisha Nenosiri Jipya",
+    "confirmPlaceholder": "Rudia nenosiri jipya",
+    "updateBtn": "Sasisha Nenosiri",
+    "updating": "Inasasisha...",
+    "tip": "Baada ya kubadilisha nenosiri lako, utahitaji kuingia tena kwenye vifaa vyako vyote.",
+    "error": {
+      "mismatch": "Manenosiri mapya hayafanani.",
+      "length": "Nenosiri lazima liwe na angalau herufi 8.",
+      "generic": "Imeshindwa kubadilisha nenosiri."
+    }
+  },
+  "howItWorks": {
+    "title": "Jinsi Space Park Inavyofanya Kazi",
+    "subtitle": "Space Park inaunganisha wamiliki wa nafasi za kibinafsi za maegesho na madereva wanaohitaji maegesho ya kuaminika. Hapa ndivyo hasa mpango wa washirika unavyofanya kazi kuanzia mwanzo hadi malipo ya kwanza.",
+    "programme": "Mpango wa Washirika",
+    "steps": {
+      "1": {
+        "title": "Tuma Ombi Lako",
+        "desc": "Jaza fomu ya haraka na maelezo yako ya kibinafsi na habari za eneo — jina, anwani, idadi ya nafasi, na kiwango cha saa kinachopendekezwa. Weka mahali kamili kwenye ramani. Mchakato mzima unachukua chini ya dakika 5."
+      },
+      "2": {
+        "title": "Uhakiki wa Ombi",
+        "desc": "Timu yetu ya uhakiki hukagua uwasilishaji wako ndani ya siku 2-5 za kazi. Tunaweza kuwasiliana nawe ili kuthibitisha maelezo ya umiliki. Unaweza kuangalia hali yako wakati wowote ukitumia Kitambulisho chako cha Ombi."
+      },
+      "3": {
+        "title": "Idhinishwa na Uwe Hewani",
+        "desc": "Mara tu inapoidhinishwa, eneo lako linaundwa kiotomatiki kwenye jukwaa la Space Park na linaonekana kuanzia hapo kwa madereva kwenye programu ya simu. Utapokea barua pepe yenye vitambulisho vyako vya kuingia kwenye Tovuti ya Washirika."
+      },
+      "4": {
+        "title": "Sanidi Akaunti Yako ya Malipo",
+        "desc": "Unapoingia kwa mara ya kwanza, ingiza maelezo yako ya akaunti ya benki. Hapa ndipo mapato yako yatawekwa kiotomatiki — hakuna uhitaji wa kutoa pesa kwa mkono."
+      },
+      "5": {
+        "title": "Fuatilia Mapato Yako",
+        "desc": "Tumia Dashibodi ya Mshirika wako kuona umiliki wa wakati halisi, historia ya vipindi, mapato ya kila siku na mwezi, na takwimu za utendaji wa eneo ukiwa na chati nzuri."
+      },
+      "6": {
+        "title": "Pata Malipo",
+        "desc": "Mapato kutoka kwa kila kipindi cha maegesho kilichokamilika yanahesabiwa kiotomatiki, tume yetu inakatwa kwa uwazi, na kilichobaki kinawekwa kwenye akaunti yako ya benki kwa misingi inayozunguka."
+      }
+    },
+    "faq": {
+      "title": "Maswali Yanayoulizwa Mara kwa Mara",
+      "q1": "Space Park inatoza kiasi gani?",
+      "a1": "Space Park inachukua tume ya 10% kwa kila kipindi cha maegesho. Unabaki na 90% ya mapato yote. Kiwango cha tume kinaonekana wazi kwenye dashibodi yako.",
+      "q2": "Nitapata lini malipo?",
+      "a2": "Mapato yanawekwa kwenye akaunti yako ya benki kwa misingi inayozunguka — kwa kawaida ndani ya siku 3-5 za kazi baada ya kipindi kukamilika.",
+      "q3": "Je, ninaweza kuweka viwango vyangu mwenyewe?",
+      "a3": "Ndiyo! Unapendekeza kiwango chako cha saa wakati wa ombi. Baada ya kuidhinishwa, unaweza kuwasiliana na usaidizi kurekebisha kiwango chako wakati wowote.",
+      "q4": "Je, nini kikitokea ikiwa dereva ataharibu nafasi yangu?",
+      "a4": "Kila kipindi kinarekodiwa na maelezo ya gari na alama ya muda. Timu yetu ya usaidizi inasaidia katika utatuzi wa migogoro.",
+      "q5": "Je, programu ya simu inafanyaje kazi?",
+      "a5": "Madereva wanaotumia programu ya Space Park wanaweza kuona eneo lako kwenye ramani, kuangalia upatikanaji wa wakati halisi, na kulipa kidijitali — bila fedha taslimu kabisa.",
+      "q6": "Je, ninaweza kusitisha eneo langu?",
+      "a6": "Ndiyo — wasiliana na timu yetu ya usaidizi au tuma barua pepe kwa support@spacepark.com ili kulemaza eneo lako kwa muda bila kupoteza akaunti yako."
+    },
+    "applyBtn": "Omba kuwa Mshirika"
+  },
+  "common": {
+    "optional": "(hiari)",
+    "mandatory": "(LAZIMA)",
+    "step": "Hatua"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Sera ya Faragha",
+      "date": "Tarehe ya Kuanza: Februari 9, 2026 · Sasisho la Mwisho: Februari 9, 2026",
+      "s1": {
+        "title": "1. Utangulizi",
+        "content": "Tumejitolea kulinda faragha yako na kuhakikisha usalama wa habari zako za kibinafsi. Sera hii ya Faragha inaelezea jinsi tunavyokusanya, kutumia, kufichua, na kulinda habari zako unapotumia programu ya simu ya Space Park, tovuti ya washirika, na huduma zinazohusiana."
+      },
+      "s2": {
+        "title": "2. Habari Tunazokusanya",
+        "item1": "Nambari ya Simu – kwa ajili ya kuunda akaunti na uhakiki",
+        "item2": "Jina – kwa ajili ya utambulisho wa akaunti",
+        "item3": "Anwani ya Barua Pepe – kwa ajili ya ufikiaji wa akaunti na arifa",
+        "item4": "Data ya Eneo na Mahali – anwani na viwianishi vya nafasi yako ya maegesho",
+        "item5": "Maelezo ya Akaunti ya Benki – kwa ajili ya amana za mapato",
+        "item6": "Nyaraka – uthibitisho wa umiliki uliopakiwa wakati wa ombi",
+        "item7": "Data ya Matumizi – vipindi, mapato, shughuli za programu"
+      },
+      "s3": {
+        "title": "3. Jinsi Tunavyotumia Habari Zako",
+        "item1": "Kuunda na kudhibiti akaunti yako ya mshirika",
+        "item2": "Kuchakata vipindi vya maegesho na kuhesabu mapato",
+        "item3": "Kuweka pesa kwenye akaunti yako ya benki iliyosajiliwa",
+        "item4": "Kutuma arifa kuhusu maombi, vipindi, na malipo",
+        "item5": "Kutoa usaidizi kwa wateja",
+        "item6": "Kuboresha huduma zetu na kuendeleza vipengele vipya",
+        "item7": "Kuzingatia majukumu ya kisheria"
+      },
+      "s4": {
+        "title": "4. Ushiriki wa Data",
+        "content": "Hatuuzi data yako. Tunaweza kushiriki habari na watoa huduma (wasindikaji wa malipo, uwasilishaji wa wingu), mamlaka za kisheria inapohitajika na sheria, au washirika wa biashara katika kesi ya kuunganishwa au ununuzi. Watoa huduma wote wanalazimika kisheria kulinda data yako."
+      },
+      "s5": {
+        "title": "5. Usalama wa Data",
+        "item1": "Usimbuaji kwa kutumia SSL/TLS",
+        "item2": "Uhifadhi salama kwenye seva zilizolindwa",
+        "item3": "Ufikiaji mdogo wa wafanyikazi",
+        "item4": "Ukaguzi wa mara kwa mara wa usalama"
+      },
+      "s6": {
+        "title": "6. Haki Zako",
+        "item1": "Kufikia habari zako za kibinafsi",
+        "item2": "Kurekebisha data zisizo sahihi",
+        "item3": "Kuomba kufutwa kwa akaunti yako",
+        "item4": "Kujiondoa kwenye arifa za matangazo",
+        "item5": "Kuomba uhamishaji wa data"
+      },
+      "s7": {
+        "title": "7. Faragha ya Watoto",
+        "content": "Huduma yetu haijakusudiwa watoto chini ya umri wa miaka 13. Hatukusanyi habari kutoka kwa watoto chini ya miaka 13 kwa makusudi."
+      },
+      "s8": {
+        "title": "8. Wasiliana Nasi",
+        "emailLabel": "Barua Pepe",
+        "phoneLabel": "Simu"
+      },
+      "consent": "Kwa kutumia Space Park, unakubaliana na Sera hii ya Faragha. Sera hii inazingatia mahitaji ya GDPR, CCPA, Google Play Store, na Apple App Store."
+    },
+    "terms": {
+      "title": "Sheria na Masharti",
+      "date": "Tarehe ya Kuanza: Februari 9, 2026 · Sasisho la Mwisho: Februari 9, 2026",
+      "s1": {
+        "title": "1. Kukubali Masharti",
+        "content": "Kwa kufikia au kutumia Space Park, unakiri kwamba umesoma, umeelewa, na unakubali kufungwa na Sheria na Masharti haya. Masharti haya yanajumuisha makubaliano ya kisheria kati yako na Space Park Ltd. Ikiwa hukubali, lazima uache mara moja matumizi yote ya Huduma."
+      },
+      "s2": {
+        "title": "2. Uhitaji wa Mtumiaji na Majukumu",
+        "item1": "Lazima uwe na angalau umri wa miaka 18 na uwe na mamlaka ya kisheria ya kuunda mkataba wa kisheria.",
+        "item2": "Unawajibika kwa kuhakikisha habari zote zinazotolewa (maelezo ya eneo, habari za benki, nk.) ni sahihi na za kisasa.",
+        "item3": "Unakubali kuzingatia sheria zote za mtaa za mali na maegesho.",
+        "item4": "Unawajibika pekee kwa shughuli yoyote inayotokea chini ya akaunti yako."
+      },
+      "s3": {
+        "title": "3. Usalama wa Akaunti",
+        "item1": "Lazima ulinde vitambulisho vyako vya kuingia na usishiriki na washirika wa tatu.",
+        "item2": "Tuna haki ya kusitisha au kufuta akaunti zinazoonyesha shughuli za kutiliwa shaka.",
+        "item3": "Tujulishe mara moja kuhusu matumizi yoyote yasiyoruhusiwa ya akaunti yako."
+      },
+      "s4": {
+        "title": "4. Huduma za Eneo la Washirika",
+        "content": "Space Park inatoa jukwaa la kidijitali la kuorodhesha nafasi yako ya maegesho, kupokea malipo ya kiotomatiki, kufuatilia mapato kwa wakati halisi, na kudhibiti eneo lako kwa mbali. Data ya upatikanaji ni ya nguvu. Space Park haiwajibiki kwa marekebisho ya ufikiaji wa eneo la maegesho na mamlaka za manispaa."
+      },
+      "s5": {
+        "title": "5. Masharti ya Kifedha na Mapato",
+        "item1": "Viwango vyote vinajumuisha kodi zinazohusika isipokuwa ikiwa imeelezwa vinginevyo.",
+        "item2": "Mapato yanahesabiwa baada ya tume ya Space Park kukatwa (inayoonekana kwenye dashibodi yako).",
+        "item3": "Fedha zinawekwa kwenye akaunti yako ya benki iliyosajiliwa kwa misingi inayozunguka.",
+        "item4": "Migogoro ya mapato lazima iwasilishwe ndani ya siku 7 kupitia usaidizi."
+      },
+      "s6": {
+        "title": "6. Faragha ya Data na Usindikaji",
+        "content": "Tunakusanya na kuchakata data zako za kibinafsi, pamoja na habari za eneo na maelezo ya benki, ili kutoa Huduma. Matumizi yetu ya data yako yanasimamiwa na Sera yetu ya Faragha, inayolingana na sheria zinazohusika za ulinzi wa data."
+      },
+      "s7": {
+        "title": "7. Ukiukaji na Utekelezaji",
+        "content": "Matumizi mabaya ya jukwaa, kutoa habari za uongo, au kukiuka masharti haya kunaweza kusababisha kusitishwa mara moja kwa akaunti yako na upotezaji wa mapato yanayosubiri."
+      },
+      "s8": {
+        "title": "8. Miliki ya Kiakili",
+        "content": "Maudhui yote, ikiwa ni pamoja na nembo, miundo ya UI, na nambari ya msingi, ni mali ya kipekee ya Space Park Ltd. Uzalishaji wowote usioruhusiwa au uhandisi wa kurudi nyuma ni marufuku kabisa."
+      },
+      "s9": {
+        "title": "9. Utatuzi wa Migogoro",
+        "content": "Migogoro yoyote itajaribiwa kwanza kutatuliwa kupitia upatanishi wa nia njema. Ikiwa upatanishi unashindwa, mgogoro utatatuliwa kwa usuluhishi wa kisheria kwa mujibu wa sheria inayotumika."
+      },
+      "s10": {
+        "title": "10. Kanusho",
+        "content": "SPACE PARK IMETOLEWA \"KAMA ILIVYO\" NA \"KAMA INAVYOPATIKANA\". KWA KIWANGO CHA JUU KINACHORUHUSIWA NA SHERIA, SPACE PARK LTD INAKANUSHA DHAMANA ZOTE. UNAKUBALI KUITETEA NA KUIWEKA SPACE PARK LTD BILA HATIA KUTOKANA NA MADAI YOYOTE YANAYOTOKANA NA MATUMIZI YAKO MABAYA YA HUDUMA."
+      },
+      "agreement": "KWA KUTUMIA SPACE PARK, UNAKIRI KWAMBA UMESOMA, UMEELEWA, NA UNAKUBALI KUFUNGWA NA SHERIA NA MASHARTI HAYA.",
+      "compliance": "Inazingatia mahitaji ya Google Play Store na Apple App Store."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "sw": "Kiswahili",
+    "fr": "Français",
+    "ar": "العربية",
+    "pt": "Português",
+    "am": "አማርኛ",
+    "ha": "Hausa",
+    "yo": "Yorùbá",
+    "zu": "isiZulu",
+    "es": "Español",
+    "de": "Deutsch"
+  }
+}

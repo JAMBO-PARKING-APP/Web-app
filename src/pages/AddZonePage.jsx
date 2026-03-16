@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { api } from '../AuthContext';
-import Sidebar from '../components/Sidebar';
 import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { useTranslation } from 'react-i18next';
+import { api } from '../AuthContext';
+import Sidebar from '../components/Sidebar';
 import { PartyPopper, AlertTriangle } from 'lucide-react';
+import LocateControl from '../components/LocateControl';
 
 // Fix leaflet icon issue natively in React
 delete L.Icon.Default.prototype._getIconUrl;
@@ -26,6 +28,7 @@ function MapPicker({ position, setPosition }) {
 
 export default function AddZonePage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     proposed_name: '',
     address: '',
@@ -47,7 +50,7 @@ export default function AddZonePage() {
     setError('');
     
     if (!position) {
-      setError('Please select the zone location on the map.');
+      setError(t('apply.error.pin'));
       return;
     }
 
@@ -60,7 +63,7 @@ export default function AddZonePage() {
 
     try {
       const res = await api.post('zones/apply/', payload);
-      setSuccessMsg(`Success! Your zone application (${res.data.application_id}) has been submitted and is pending approval.`);
+      setSuccessMsg(t('addZone.successMsg', { id: res.data.application_id }));
       setFormData({
         proposed_name: '', address: '', total_slots: '', proposed_hourly_rate: '',
         operating_hours: '24/7', parking_surface: 'paved', has_security: false, has_cctv: false,
@@ -68,7 +71,7 @@ export default function AddZonePage() {
       });
       setPosition(null);
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to submit application. Please check your inputs.');
+      setError(err.response?.data?.message || t('addZone.errorMsg'));
     } finally {
       setLoading(false);
     }
@@ -79,21 +82,21 @@ export default function AddZonePage() {
       <Sidebar />
       <main className="dashboard-main">
         <div className="dashboard-header" style={{ marginBottom: 30 }}>
-          <h1>Add New Zone</h1>
-          <p>Submit a request to add another parking location under your account.</p>
+          <h1>{t('addZone.title')}</h1>
+          <p>{t('addZone.subtitle')}</p>
         </div>
 
         <div className="glass-card" style={{ maxWidth: 800 }}>
           {successMsg ? (
             <div style={{ textAlign: 'center', padding: '40px 20px' }}>
               <div style={{ fontSize: 48, marginBottom: 16 }}><PartyPopper size={48} color="var(--success)" /></div>
-              <h2 style={{ fontSize: 24, marginBottom: 16 }}>Zone Request Sent!</h2>
+              <h2 style={{ fontSize: 24, marginBottom: 16 }}>{t('addZone.successTitle')}</h2>
               <p style={{ color: 'var(--text-muted)', marginBottom: 24, lineHeight: 1.6 }}>{successMsg}</p>
               <button 
                 className="btn-primary" 
                 onClick={() => navigate('/dashboard')}
                 style={{ width: 'auto', padding: '12px 32px' }}>
-                Return to Dashboard
+                {t('addZone.returnBtn')}
               </button>
             </div>
           ) : (
@@ -102,38 +105,39 @@ export default function AddZonePage() {
               
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
                 <div className="form-group">
-                  <label>Proposed Zone Name</label>
-                  <input type="text" required placeholder="e.g. Downtown Plaza Express" 
+                  <label>{t('apply.zone.name')}</label>
+                  <input type="text" required placeholder={t('addZone.form.namePlaceholder')} 
                     value={formData.proposed_name} onChange={e => setFormData({...formData, proposed_name: e.target.value})} />
                 </div>
                 <div className="form-group">
-                  <label>Physical Address</label>
-                  <input type="text" required placeholder="Full street address"
+                  <label>{t('apply.zone.address')}</label>
+                  <input type="text" required placeholder={t('addZone.form.addressPlaceholder')}
                     value={formData.address} onChange={e => setFormData({...formData, address: e.target.value})} />
                 </div>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
                 <div className="form-group">
-                  <label>Total Available Slots</label>
-                  <input type="number" required min="1" placeholder="Number of spaces"
+                  <label>{t('apply.zone.slots')}</label>
+                  <input type="number" required min="1" placeholder={t('addZone.form.slotsPlaceholder')}
                     value={formData.total_slots} onChange={e => setFormData({...formData, total_slots: e.target.value})} />
                 </div>
                 <div className="form-group">
-                  <label>Proposed Hourly Rate (KES/GHS)</label>
-                  <input type="number" required step="0.01" min="0" placeholder="e.g. 150.00"
+                  <label>{t('apply.zone.rate')}</label>
+                  <input type="number" required step="0.01" min="0" placeholder={t('addZone.form.ratePlaceholder')}
                     value={formData.proposed_hourly_rate} onChange={e => setFormData({...formData, proposed_hourly_rate: e.target.value})} />
                 </div>
               </div>
 
               <div className="form-group" style={{ marginTop: 10 }}>
-                <label>Pin Location on Map</label>
+                <label>{t('addZone.form.mapLocation.label')}</label>
                 <div style={{ fontSize: 13, color: 'var(--text-muted)', marginBottom: 12 }}>
-                  Click anywhere on the map to accurately place your parking zone.
+                  {t('addZone.form.mapLocation.instruction')}
                 </div>
-                <div style={{ height: 300, width: '100%', borderRadius: 12, overflow: 'hidden', border: '1px solid var(--border)' }}>
-                  <MapContainer center={[5.6037, -0.1870]} zoom={13} style={{ height: '100%', width: '100%' }}>
+                <div style={{ height: 300, width: '100%', borderRadius: 12, overflow: 'hidden', border: '1px solid var(--border)', position: 'relative' }}>
+                  <MapContainer center={[5.0, 20.0]} zoom={3} style={{ height: '100%', width: '100%' }}>
                     <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" />
+                    <LocateControl onLocationFound={pos => setPosition([pos.lat, pos.lng])} />
                     <MapPicker position={position} setPosition={setPosition} />
                   </MapContainer>
                 </div>
@@ -141,18 +145,16 @@ export default function AddZonePage() {
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginTop: 24 }}>
                 <div className="form-group">
-                  <label>Parking Surface</label>
+                  <label>{t('apply.zone.surface')}</label>
                   <select value={formData.parking_surface} onChange={e => setFormData({...formData, parking_surface: e.target.value})}>
-                    <option value="paved">Paved</option>
-                    <option value="gravel">Gravel</option>
-                    <option value="dirt">Dirt</option>
-                    <option value="grass">Grass</option>
-                    <option value="covered">Covered / Indoor</option>
+                    <option value="paved">{t('apply.zone.surfaceOptions.paved')}</option>
+                    <option value="gravel">{t('apply.zone.surfaceOptions.gravel')}</option>
+                    <option value="indoor">{t('apply.zone.surfaceOptions.indoor')}</option>
                   </select>
                 </div>
                 <div className="form-group">
-                  <label>Operating Hours</label>
-                  <input type="text" placeholder="e.g. 24/7 or 8AM - 6PM"
+                  <label>{t('apply.zone.hours')}</label>
+                  <input type="text" placeholder={t('addZone.form.hoursPlaceholder')}
                     value={formData.operating_hours} onChange={e => setFormData({...formData, operating_hours: e.target.value})} />
                 </div>
               </div>
@@ -161,17 +163,17 @@ export default function AddZonePage() {
                 <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', fontSize: 14 }}>
                   <input type="checkbox" checked={formData.has_security} 
                     onChange={e => setFormData({...formData, has_security: e.target.checked})} />
-                  On-site Security
+                  {t('apply.zone.security')}
                 </label>
                 <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', fontSize: 14 }}>
                   <input type="checkbox" checked={formData.has_cctv} 
                     onChange={e => setFormData({...formData, has_cctv: e.target.checked})} />
-                  CCTV Surveillance
+                  {t('apply.zone.cctv')}
                 </label>
               </div>
 
               <button type="submit" className="btn-primary" disabled={loading} style={{ width: '100%', padding: '14px' }}>
-                {loading ? 'Submitting Application...' : 'Submit Zone Request'}
+                {loading ? t('addZone.nav.submitting') : t('addZone.nav.submit')}
               </button>
             </form>
           )}

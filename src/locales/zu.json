@@ -1,0 +1,553 @@
+{
+  "navbar": {
+    "logo": "Space Park",
+    "howItWorks": "Indlela Okusebenza Ngayo",
+    "benefits": "Izinzuzo",
+    "getApp": "Thola i-App",
+    "checkStatus": "Hlola Isimo",
+    "partnerLogin": "Ukungena Kozakwethu",
+    "backToHome": "Buyela Ekhaya"
+  },
+  "hero": {
+    "badge": "Hola imali engenayo ngendawo yakho yokupaka",
+    "title": "Guqula Indawo Yakho Ibe Imali Yangempela",
+    "sub": "Faka indawo yakho yokupaka ku-Space Park futhi uhole imali njalo uma kukhona opaka kuyo. Ukuhlaziywa kwesikhathi sangempela, izinkokhelo ezizenzakalelayo, nokulawula okuphelele — konke kudeshibhodi yakho yozakwethu.",
+    "applyNow": "Faka Isicelo Manje — Mahhala",
+    "learnHow": "Funda Ukuthi Kusebenza Kanjani"
+  },
+  "stats": {
+    "zones": "Izindawo Zozakwethu",
+    "parkers": "Abapaki Benyanga",
+    "commission": "IKhomishini Kuphela",
+    "approval": "Isikhathi Sokugunyazwa"
+  },
+  "process": {
+    "eyebrow": "Inqubo Elula",
+    "title": "Iqala ngezinyathelo ezi-3",
+    "sub": "Faka indawo yakho yokupaka ohlwini bese uqala ukuhola — akukho buchwepheshe obudingekayo",
+    "step1": {
+      "label": "Isinyathelo soku-1",
+      "title": "Hambisa Isicelo Sakho",
+      "desc": "Gcwalisa imininingwane yendawo yakho, phini indawo yakho kumephu, bese ulayisha ubufakazi bobunikazi — kuthatha iminithi engaphansi kwe-5."
+    },
+    "step2": {
+      "label": "Isinyathelo sesi-2",
+      "title": "Gunyazwa Ezinsukwini Ezimbalwa",
+      "desc": "Ithimba lethu libuyekeza phakathi kwezinsuku zokusebenza ezingu-2-5. Hlola isimo sakho nge-ID yakho yesicelo. Uzothola imininingwane yokungena nge-imeyili."
+    },
+    "step3": {
+      "label": "Isinyathelo sesi-3",
+      "title": "Hola Ngokuzenzakalelayo",
+      "desc": "Indawo yakho iqala ukusebenza ngokushesha. Gada imali oyiholayo, amaseshini, nokusebenza kudeshibhodi yakho ezinikele yozakwethu."
+    },
+    "guide": "Buka umhlahlandlela ophelele"
+  },
+  "benefits": {
+    "eyebrow": "Kungani u-Space Park",
+    "title": "Konke Okudingayo Ukuze Uphumelele",
+    "card1": {
+      "title": "Gcina u-90% Wemali Oyiholele",
+      "desc": "Sikhokhisa ikhomishini ecacile engu-10% — azikho izimali ezifihliwe, azikho izindleko zokusetha, azikho izinkokhelo zanyanga zonke. Okuholayo kungokwakho."
+    },
+    "card2": {
+      "title": "Ukuhlaziywa Kwesikhathi Sangempela",
+      "desc": "Gada amazinga okuhlala, umlando wamaseshini, nemali engenayo yansuku zonke ngedeshibhodi yozakwethu enhle neyakhelwe injongo."
+    },
+    "card3": {
+      "title": "Izinkokhelo Zasebhange Ezizenzakalelayo",
+      "desc": "Xhumanisa i-akhawunti yakho yasebhange kanye bese uthola amadiphozi azenzakalelayo — akukho nqubo yokukhipha imali edingekayo."
+    },
+    "card4": {
+      "title": "Ukubonakala Kwe-App Ngokushesha",
+      "desc": "Indawo yakho ivela kuhlelo lokusebenza lweselula lwe-Space Park ngomzuzu igunyazwa, ibonakala ezinkulungwaneni zabashayeli abafuna indawo yokupaka nsuku zonke."
+    },
+    "card5": {
+      "title": "Kuqinisekisiwe Futhi Kuthenjiwe",
+      "desc": "Yonke indawo efakwe ohlwini iqinisekiswa ithimba lethu, okunikeza abashayeli ukuzethemba futhi kuqhube ukuhlala okuphezulu endaweni yakho."
+    },
+    "card6": {
+      "title": "Ukuphathwa Kokuzisiza",
+      "desc": "Buyekeza inani lakho lehora, amahora okusebenza, nemininingwane yendawo kudeshibhodi yakho noma nini, ngaphandle kokudinga ukuxhumana nosekelo."
+    }
+  },
+  "mobile": {
+    "eyebrow": "I-App Yeselula",
+    "title": "Abashayeli Bakuthola ku-Space Park",
+    "sub": "Indawo yakho efakwe ohlwini ibonakala ngokushesha kubashayeli abasebenzisa i-app ye-Space Park — sesha, paka, futhi ukhokhe konke endaweni eyodwa.",
+    "card1": {
+      "title": "Thola Indawo Yokupaka",
+      "desc": "Abashayeli bafuna izindawo ezitholakalayo eduze nendawo abaya kuyo ngesikhathi sangempela."
+    },
+    "card2": {
+      "title": "Inkokhelo Engenamali",
+      "desc": "Seshini ngayinye ivuselelwa ngedijithali — asikho isidingo sokuphatha ukheshi ngakolwakho uhlangothi."
+    },
+    "card3": {
+      "title": "Ukulandelela Iseshini",
+      "desc": "Qala, nweba, futhi uqedele amaseshini okupaka kusuka ku-app ngomlando ophelele wokucwaninga."
+    },
+    "card4": {
+      "title": "Izaziso Ezisheshayo",
+      "desc": "Abashayeli bathola izikhumbuzi futhi uthola izexwayiso zeseshini — kwenziwa ngokuzenzakalelayo ngokukhululekile."
+    }
+  },
+  "cta": {
+    "title": "Usukulungele Ukuqala Ukuhola?",
+    "sub": "Joyina amakhulu abanikazi bezindawo zokupaka asebevele behola imali ku-Space Park. Izindleko eziyiziro zokufaka isicelo.",
+    "apply": "Faka isicelo samahhala",
+    "status": "Hlola Isimo Sesicelo"
+  },
+  "contact": {
+    "title": "Unemibuzo?",
+    "sub": "Hambisa noma yimiphi imibuzo onayo futhi ithimba lethu lizobuyela kuwe."
+  },
+  "footer": {
+    "desc": "Indlela ehlakaniphile yokwenza imali ngendawo yakho yokupaka. Xhuma nezinkulungwane zabashayeli futhi uhole ngokuzenzakalelayo.",
+    "portal": "Ingosi Yozakwethu",
+    "legal": "Kwezomthetho",
+    "contactSupport": "Xhumana Nosekelo",
+    "rights": "Wonke amalungelo agodliwe.",
+    "privacy": "Ubumfihlo",
+    "terms": "Imigomo"
+  },
+  "apply": {
+    "title": "Faka Isicelo Sokubhala Indawo Yakho",
+    "subtitle": "Gcwalisa ifomu elingezansi ukuze uthole indawo yakho yokupaka ku-Jambo Parking",
+    "steps": {
+      "personal": "Ulwazi Lomuntu siqu",
+      "zone": "Imininingwane Yendawo",
+      "pin": "Phina Indawo",
+      "submit": "Amadokhumenti Nokuhambisa"
+    },
+    "personal": {
+      "title": "Imininingwane Yakho Yomuntu siqu",
+      "name": "Igama Eliphelele",
+      "email": "Ikheli Le-imeyili",
+      "phone": "Inombolo Yocingo",
+      "namePlaceholder": "John Kamau",
+      "emailPlaceholder": "john@example.com",
+      "phonePlaceholder": "+254712345678"
+    },
+    "zone": {
+      "title": "Imininingwane Yendawo",
+      "name": "Igama Lendawo Elihlongozwayo",
+      "address": "Ikheli",
+      "slots": "Inani Eliphelele Lezindawo Zokupaka",
+      "rate": "Inani Lehora (Imali Yasendaweni)",
+      "hours": "Amahora Okusebenza",
+      "surface": "Uhlobo Lwendawo",
+      "surfaceOptions": {
+        "paved": "Okunamathelisiwe / Kakhonkolo",
+        "gravel": "Amatshe / Inhlabathi",
+        "indoor": "Ngaphakathi / Igalaji"
+      },
+      "security": "Onogada bendawo",
+      "cctv": "Amakhamera e-CCTV afakiwe",
+      "instructions": "Imiyalo yokufinyelela (uyazikhethela)",
+      "instructionsPlaceholder": "Abashayeli kufanele bayithole kanjani noma bangene kanjani kule ndawo?"
+    },
+    "map": {
+      "title": "Phina Indawo Yakho Yendawo",
+      "sub": "Chofoza kumephu ukuze ubeke iphini ncamashi lapho indawo yakho yokupaka ikhona.",
+      "success": "Indawo iphiniwe ku-{{lat}}, {{lng}}"
+    },
+    "review": {
+      "title": "Buyekeza Futhi Uhambise",
+      "sub": "Layisha ubufakazi bobunikazi (YIMPUBELELO), bese uhambisa isicelo sakho.",
+      "summary": {
+        "applicant": "Omfakisicelo",
+        "email": "I-imeyili",
+        "phone": "Ucingo",
+        "zoneName": "Igama Lendawo",
+        "address": "Ikheli",
+        "slots": "Izindawo",
+        "rate": "Inani Lehora",
+        "hours": "Amahora",
+        "location": "Indawo"
+      },
+      "upload": "Ubufakazi Bobunikazi / ID (YIMPUBELELO)",
+      "terms": "Imigomo Nemibandela",
+      "agree": "Ngifundile futhi ngivumelana neMigomo nemibandela"
+    },
+    "nav": {
+      "back": "Emuva",
+      "next": "Okulandelayo",
+      "submitting": "Iyahambisa...",
+      "submit": "Hambisa Isicelo"
+    },
+    "error": {
+      "personal": "Sicela ugcwalise yonke imininingwane yomuntu siqu.",
+      "zone": "Sicela ugcwalise yonke imininingwane yendawo.",
+      "pin": "Sicela uchofoze kumephu ukuze ubeke indawo yakho.",
+      "upload": "Sicela ulayishe ubufakazi bobunikazi (PNG, JPG noma PDF).",
+      "generic": "Ukuthunyelwa kuhlulekile. Sicela uzame futhi.",
+      "terms_text": "Ngokufaka indawo yakho ku-Space Park, uvumelana nalokhu okulandelayo:",
+      "terms_list": {
+        "accuracy": "Ukunemba: Siqinisekisa ukuthi lonke ulwazi olunikeziwe mayelana nendawo (indawo, amanani, izikhala) lunembile.",
+        "ownership": "Ubunikazi: Siqinisekisa ukuthi unomnikazi noma unegunya elisemthethweni lokuqashisa/ukufaka indawo yokupaka.",
+        "safety": "Ukuphepha: Ubhekene nokuqinisekisa ukuthi indawo iphephile, iyatholakala, futhi iyakekelwa.",
+        "compliance": "Ukuthobela: Uyavuma ukuthobela yonke imithetho yendawo neziqondiso mayelana nokupaka nokusebenza kwebhizinisi.",
+        "fees": "Izimali Zenkundla: Uyavuma isakhiwo sekhomishini yenkundla kukho konke ukubhukha okwenziwa nge-Space Park.",
+        "termination": "Ukunqanyulwa: I-Space Park inelungelo lokumisa noma lokususa noma yiluphi uhlu oluphula le migomo."
+      }
+    }
+  },
+  "locate": {
+    "title": "Ngithole",
+    "here": "Ulapha",
+    "error": "Ukufinyelela indawo kunqatshiwe noma akutholakali."
+  },
+  "addZone": {
+    "title": "Faka Indawo Entsha",
+    "sub": "Hambisa isicelo sokwengeza enye indawo yokupaka ngaphansi kwe-akhawunti yakho.",
+    "subtitle": "Thumela isicelo sokwengeza enye indawo yokupaka ngaphansi kwe-akhawunti yakho.",
+    "successTitle": "Isicelo Sendawo Sithunyelwe!",
+    "successMsg": "Impumelelo! Isicelo sakho sendawo ({{id}}) sihambisile futhi sisalindele ukugunyazwa.",
+    "returnBtn": "Buyela eKhasini Eliyinhloko",
+    "form": {
+      "name": "Igama Lendawo Elihlongozwayo",
+      "namePlaceholder": "isib: Igaba lase-Westlands",
+      "address": "Ikheli Lendawo",
+      "addressPlaceholder": "Igama Lomgwaqo, Indawo",
+      "slots": "Inani Eliphelele Lezindawo Ezikhona",
+      "slotsPlaceholder": "Inani lezindawo",
+      "rate": "Inani lehora elihlongozwayo (KES/GHS)",
+      "ratePlaceholder": "isb. 150.00",
+      "hoursPlaceholder": "isb. 24/7 noma 8AM - 6PM",
+      "map": "Phina indawo kumephu",
+      "mapSub": "Chofoza noma yikuphi kumephu ukuze ubeke indawo yakho yokupaka ngokunembile.",
+      "mapLocation": {
+        "label": "Phina Indawo Kumephu",
+        "instruction": "Chofoza noma yikuphi kumephu ukuze ubeke indawo yakho yokupaka ngokunembile."
+      },
+      "parkingSurface": {
+        "label": "Indawo Yokupaka"
+      },
+      "surface": "Indawo Yokupaka",
+      "hours": "Amahora Okusebenza",
+      "security": "Ukuphepha Kwenyandla",
+      "cctv": "Ukugada kwe-CCTV",
+      "submit": "Thumela Isicelo Sendawo"
+    },
+    "nav": {
+      "submitting": "Iyasithumela isicelo...",
+      "submit": "Thumela Isicelo Sendawo"
+    },
+    "errorMsg": "Ukuthunyelwa kuhlulekile. Sicela uhlole okufakile."
+  },
+  "login": {
+    "title": "Ingosi Yozakwethu",
+    "subtitle": "Ngena ngemvume ukuze uphathe indawo yakho yokupaka",
+    "email": "Ikheli Le-imeyili",
+    "password": "Iphasiwedi",
+    "signin": "Ngena",
+    "signingIn": "Iyangena...",
+    "noAccount": "Awunayo i-akhawunti?",
+    "applyLink": "Faka isicelo sokuba uzakwethu",
+    "statusLink": "Hlola isimo sesicelo sakho",
+    "error": "Ukungena kuhlulekile. Sicela uhlole imininingwane yakho."
+  },
+  "sidebar": {
+    "dashboard": "Ideshibhodi",
+    "addZone": "Faka Indawo",
+    "bankDetails": "Imininingwane Yasebhange",
+    "changePassword": "Shintsha Iphasiwedi",
+    "darkMode": "Indlela Emnyama",
+    "lightMode": "Indlela Ekhanyayo",
+    "signOut": "Phuma",
+    "role": "Umnikazi",
+    "owner": "Umnikazi"
+  },
+  "dashboard": {
+    "title": "Ideshibhodi",
+    "welcome": "Siyakwamukela futhi! Bheka ukuthi indawo yakho isebenza kanjani.",
+    "loading": "Ilayisha ideshibhodi yakho...",
+    "error": "Ukulayisha kuhlulekile. Sicela uzame futhi.",
+    "stats": {
+      "totalEarnings": "Konke Osukuholile",
+      "thisMonth": "Kule Nyanga",
+      "today": "Namuhla",
+      "activeSessions": "Amaseshini Akhona",
+      "zones": "Izindawo",
+      "allTime": "Isikhathi sonke",
+      "currentMonth": "Inyanga yamanje",
+      "todaySub": "Okuholwe namuhla",
+      "activeSub": "{{count}} namuhla",
+      "zonesSub": "Izindawo ezisebenzayo"
+    },
+    "charts": {
+      "earningsTitle": "Okuholiwe — Ezinsukwini ezingu-30 Ezidlule",
+      "noData": "Ayikho idatha yokuholwayo okwamanje. Izovela lapha uma amaseshini eseqediwe.",
+      "revenueSplit": "Ukuhlukaniswa Kwemali Ngendawo"
+    },
+    "table": {
+      "zonesTitle": "Izindawo Zakho",
+      "colZone": "Indawo",
+      "colSlots": "Izindawo",
+      "colRate": "Inani Lehora",
+      "colActive": "Amaseshini Akhona",
+      "colOccupancy": "Ukuhlala",
+      "colCommission": "IKhomishini",
+      "sessionsTitle": "Amaseshini Agcine Ukwenzeka",
+      "colVehicle": "Imoto",
+      "colStart": "Isikhathi Sokuqala",
+      "colStatus": "Isimo",
+      "colAmount": "Inani",
+      "noSessions": "Awekho amaseshini okwamanje. Azovela lapha uma abashayeli beqala ukupaka."
+    }
+  },
+  "success": {
+    "title": "Isicelo Sithunyelwe!",
+    "subtitle": "Isicelo sakho sendawo sitholiwe. Ithimba lethu lizosibuyekeza ezinsukwini zokusebenza ezingu-2-5 futhi uzokwaziswa nge-imeyili.",
+    "appIdLabel": "I-ID Yakho Yesicelo",
+    "copyId": "Kopisha I-ID",
+    "copied": "Ikopishiwe!",
+    "saveIdTip": "Gcina le-ID — uzoyidinga ukuze uhlole isimo sesicelo sakho",
+    "checkStatus": "Hlola Isimo",
+    "backHome": "Buyela Ekhaya"
+  },
+  "status": {
+    "title": "Hlola Isimo Sesicelo",
+    "subtitle": "Faka i-ID yakho yesicelo ukuze ubone isimo sakho samanje",
+    "label": "I-ID Yesicelo",
+    "placeholder": "isib: a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "checking": "Iyahlola...",
+    "checkBtn": "Hlola Isimo",
+    "error": {
+      "empty": "Sicela ufake i-ID yesicelo.",
+      "notFound": "Asikho isicelo esitholiwe ngale-ID. Sicela uhlole uzame futhi.",
+      "generic": "Kukhona okungahambanga kahle. Sicela uzame futhi."
+    },
+    "states": {
+      "pending": {
+        "label": "Isabuyekezwa",
+        "msg": "Isicelo sakho sisabuyekezwa ithimba lethu. Lokhu kuvame ukuthatha izinsuku ezingu-2-5."
+      },
+      "approved": {
+        "label": "Samukeliwe",
+        "msg": "Siyakuhalalisela! Indawo yakho yamukeliwe futhi isiyasebenza. Hlola i-imeyili yakho ngezitifiketi zokungena."
+      },
+      "rejected": {
+        "label": "Asamukelwanga",
+        "msg": "Ngeshwa isicelo sakho asiwashongo kulesi sikhathi. Sicela uhlole amanothi noma uxhumane nosekelo."
+      }
+    },
+    "notes": "Amanothi oMlawuli:",
+    "submittedOn": "Sihanjiswe ngo-{{date}}",
+    "loginBtn": "→ Ngena kwingosi yozakwethu"
+  },
+  "bank": {
+    "title": "Imininingwane Yasebhange",
+    "subtitle": "Phatha i-akhawunti yakho ukuze uthole izinkokhelo",
+    "info": "Lolu lwazi lugcinwe luphephile futhi lusetshenziselwa kuphela ukufaka imali oyiholayo.",
+    "bankName": "Igama Lebhange",
+    "bankNamePlaceholder": "isib: KCB Bank, Equity Bank",
+    "accountNumber": "Inombolo Ye-akhawunti",
+    "accountNumberPlaceholder": "Inombolo ye-akhawunti yakho yasebhange",
+    "accountHolder": "Igama Lomnikazi We-akhawunti",
+    "accountHolderPlaceholder": "Igama njengoba livela ku-akhawunti",
+    "saveBtn": "Gcina Imininingwane",
+    "saving": "Iyayigcina...",
+    "error": {
+      "required": "Zonke izinkambu ziyadingeka.",
+      "generic": "Ukugcina kuhlulekile."
+    },
+    "success": "Imininingwane yasebhange igcinwe ngempumelelo."
+  },
+  "password": {
+    "title": "Shintsha Iphasiwedi",
+    "subtitle": "Buyekeza iphasiwedi yakho ukuze ugcine i-akhawunti yakho iphephile",
+    "current": "Iphasiwedi Yamanje",
+    "currentPlaceholder": "Iphasiwedi yakho yamanje",
+    "new": "Iphasiwedi Entsha",
+    "newPlaceholder": "Okungenani izinhlamvu ezingu-8",
+    "confirm": "Qinisekisa Iphasiwedi Entsha",
+    "confirmPlaceholder": "Phinda iphasiwedi entsha",
+    "updateBtn": "Buyekeza",
+    "updating": "Iyabuyekeza...",
+    "tip": "Ngemuva kokushintsha iphasiwedi yakho, kuzodingeka ungene ngemvume futhi kuwo wonke amadivayisi akho.",
+    "error": {
+      "mismatch": "Amaphasiwedi amasha awafani.",
+      "length": "Iphasiwedi kufanele okungenani ibe nezinhlamvu ezingu-8.",
+      "generic": "Ukushintsha iphasiwedi kuhlulekile."
+    }
+  },
+  "howItWorks": {
+    "title": "Indlela u-Space Park Osebenza Ngayo",
+    "subtitle": "U-Space Park uxhumanisa abanikazi bezindawo zokupaka ezizimele nabashayeli abadinga indawo yokupaka ethembekile. Nansi indlela uhlelo lwakho lusebenza ngayo.",
+    "programme": "Uhlelo Lozakwethu",
+    "steps": {
+      "1": {
+        "title": "Hambisa Isicelo Sakho",
+        "desc": "Gcwalisa ifomu elifushane ngemininingwane yakho neyendawo — igama, ikheli, izindawo kanye nenani lehora elihlongozwayo. Phina indawo ncamashi kumephu. Kuthatha imizuzu engaphansi kwe-5."
+      },
+      "2": {
+        "title": "Ukubuyekezwa Kwesicelo",
+        "desc": "Ithimba lethu liqinisekisa isicelo sakho ezinsukwini ezingu-2-5. Singase sikuthinte ukuze siqinisekise ubunikazi. Landelela isimo nge-ID yakho."
+      },
+      "3": {
+        "title": "Ukuvunyelwa & Ukusebenza",
+        "desc": "Uma sesikuvumile, indawo yakho iyadalwa futhi ibonakale kubashayeli ku-app. Uzothola i-imeyili yokuqinisekisa ukungena kwakho."
+      },
+      "4": {
+        "title": "Setha Amakhredithi Okukhokha",
+        "desc": "Uma ungena okokuqala, faka imininingwane yakho yasebhange. Yilapho okuholayo kuzongena khona ngokuzenzakalelayo — akukho okokukhipha imali okwenziwa mathupha."
+      },
+      "5": {
+        "title": "Gada Imali Oyiholayo",
+        "desc": "Sebenzisa Ideshibhodi Yozakwethu ukuze ubone ukuhlala kwesikhathi sangempela, umlando, imali oyiholayo nezibalo zokusebenza ngamagrafu."
+      },
+      "6": {
+        "title": "Thola Inkokhelo Yakho",
+        "desc": "Izinzuzo zeseshini ngayinye zibalwa ngokuzenzakalelayo, ikhomishini yethu idonswa ngokukhululekile, kanti okunye kufakwa kwi-akhawunti yakho yasebhange."
+      }
+    },
+    "faq": {
+      "title": "Imibuzo Evame Ukubuzwa",
+      "q1": "Ibiza malini i-Space Park?",
+      "a1": "I-Space Park igcina u-10% wekhomishini kuseshini ngayinye. Uzothola u-90% wakho konke okuholiwe. Ikhomishini ibonakala kudeshibhodi yakho.",
+      "q2": "Ngizokhokhelwa nini?",
+      "a2": "Imali engenayo ifakwa kwi-akhawunti yakho njalo — kuvame ukuba ezinsukwini zokusebenza ezingu-3-5 emva kokuqedwa kweseshini.",
+      "q3": "Ngingakwazi ukuzibhekela amanani ami?",
+      "a3": "Yebo! Uhlongoza inani lakho ngesikhathi ufaka isicelo. Uma sekuvunyelwe, ungaxhumana nosekelo ukuze ulishintshe noma nini.",
+      "q4": "Kwenzekani uma umshayeli edala umonakalo endaweni yami?",
+      "a4": "Iseshini ngayinye irekhodwa ngemininingwane yemoto nesikhathi. Ithimba lethu losekelo liyasiza ekuxazululeni imibango.",
+      "q5": "Isebenza kanjani i-app yeselula?",
+      "a5": "Abashayeli babona indawo yakho kumephu, bahlole ukutholakala kwesikhathi sangempela, bakhokhe ngedijithali — ngaphandle kokheshi.",
+      "q6": "Ngingayimisa kancane indawo yami?",
+      "a6": "Yebo — xhumana nosekelo noma uthumele i-imeyili ku-support@spacepark.com ukuze uvale indawo yakho okwesikhashana ngaphandle kokulahlekelwa yi-akhawunti yakho."
+    },
+    "applyBtn": "Ba uZakwethu"
+  },
+  "common": {
+    "optional": "(uyazikhethela)",
+    "mandatory": "(YIMPUBELELO)",
+    "step": "Isinyathelo"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Inqubomgomo Yobumfihlo",
+      "date": "Idethi Yokusebenza: 9 uNhlolanja 2026 · Kugcine Ukubuyekezwa: 9 uNhlolanja 2026",
+      "s1": {
+        "title": "1. Isingeniso",
+        "content": "Sizibophezele ekuvikeleni ubumfihlo bakho nokuqinisekisa ukuthi imininingwane yakho iphephile. Le nqubomgomo ichaza indlela esiqoqa ngayo, esisebenzisa ngayo, nalesivikela ngayo idatha yakho."
+      },
+      "s2": {
+        "title": "2. Idatha Esiyiqoqayo",
+        "item1": "Inombolo yocingo – yokudala i-akhawunti nokunikeza imvume",
+        "item2": "Igama – lokukhonza i-akhawunti",
+        "item3": "I-imeyili – yezaziso nokuxhumana",
+        "item4": "Indawo yendawo – ikheli nezixhumanisi",
+        "item5": "Imininingwane yasebhange – yenkokhelo",
+        "item6": "Amadokhumenti – ubufakazi bobunikazi",
+        "item7": "Ukusetshenziswa – amaseshini, imali, nomsebenzi"
+      },
+      "s3": {
+        "title": "3. Indlela Esisebenzisa Ngayo Idatha Yakho",
+        "item1": "Ukuphatha i-akhawunti yakho yozakwethu",
+        "item2": "Ukucubungula amaseshini nokubala okuholiwe",
+        "item3": "Ukufaka imali kwi-akhawunti yakho yasebhange",
+        "item4": "Ukuthumela izaziso",
+        "item5": "Ukuhlinzeka ngosekelo lwamakhasimende",
+        "item6": "Ukuthuthukisa izinsiza zethu",
+        "item7": "Ukuthobela izibopho zomthetho"
+      },
+      "s4": {
+        "title": "4. Ukwabelana Ngodatha",
+        "content": "Asithengisi idatha yakho. Singabelana ngayo nabahlinzeki bezinsizakalo (izinkokhelo) noma iziphathimandla zomthetho uma kudingeka."
+      },
+      "s5": {
+        "title": "5. Ezokuphepha",
+        "item1": "Encryption nge-SSL/TLS",
+        "item2": "Ukugcina kuma-server aphephile",
+        "item3": "Ukufinyelela kwabasebenzi kukhawulelwe",
+        "item4": "Ukucwaningwa kwezokuphepha njalo"
+      },
+      "s6": {
+        "title": "6. Amalungelo Akho",
+        "item1": "Ukufinyelela idatha yakho",
+        "item2": "Ukulungisa amaphutha",
+        "item3": "Ukucela ukususwa kwe-akhawunti",
+        "item4": "Ukuphuma ezazisweni",
+        "item5": "Ukukhipha idatha yakho (Export)"
+      },
+      "s7": {
+        "title": "7. Ubumfihlo Bezingane",
+        "content": "Inkonzo yethu ayihloselwe izingane ezingaphansi kweminyaka engu-13."
+      },
+      "s8": {
+        "title": "8. Thintana Nathi",
+        "emailLabel": "I-imeyili",
+        "phoneLabel": "Ucingo"
+      },
+      "consent": "Ngokusebenzisa u-Space Park, uyavumelana nale nqubomgomo yobumfihlo."
+    },
+    "terms": {
+      "title": "Imigomo Yesevisi",
+      "date": "Idethi Yokusebenza: 9 uNhlolanja 2026",
+      "s1": {
+        "title": "1. Ukwamukela",
+        "content": "Ngokusebenzisa u-Space Park, uyavuma ukubophezeleka yile migomo."
+      },
+      "s2": {
+        "title": "2. Ukufaneleka Nesibopho",
+        "item1": "Kufanele ube neminyaka engu-18 ubuncane.",
+        "item2": "Idatha enikeziwe kufanele ibe nembile.",
+        "item3": "Thobela imithetho yendawo yobunikazi.",
+        "item4": "Unesibopho ngalokho okwenzeka kwi-akhawunti yakho."
+      },
+      "s3": {
+        "title": "3. Ukuphepha Kwe-akhawunti",
+        "item1": "Vikela imininingwane yakho yokungena.",
+        "item2": "Singakwazi ukumisa ama-akhawunti asolisayo.",
+        "item3": "Sazise uma i-akhawunti yakho isetshenziswa ngaphandle kwemvume."
+      },
+      "s4": {
+        "title": "4. Izinsiza Yozakwethu",
+        "content": "U-Space Park uhlinzeka ngengosi yedijithali yokufaka indawo yakho."
+      },
+      "s5": {
+        "title": "5. Imigomo Yezezimali",
+        "item1": "Amanani afaka izintela ezifanele.",
+        "item2": "Okuholayo kubalwa emva kokususwa kwekhomishini ye-Space Park.",
+        "item3": "Imali ifakwa kwi-akhawunti yasebhange ebhalisiwe.",
+        "item4": "Izikhalo zezezimali kufanele zethulwe ezinsukwini ezingu-7."
+      },
+      "s6": {
+        "title": "6. Ubumfihlo",
+        "content": "Ukusetshenziswa kwedatha kulawulwa yiNqubomgomo yethu yoBumfihlo."
+      },
+      "s7": {
+        "title": "7. Ukwephulwa Komthetho",
+        "content": "Ukusetshenziswa kabi kungaholela ekumomisweni kwe-akhawunti ngokushesha."
+      },
+      "s8": {
+        "title": "8. Amalungelo Obunikazi",
+        "content": "Konke okuqukethwe kungokuka-Space Park Ltd."
+      },
+      "s9": {
+        "title": "9. Ukuxazulula Imibango",
+        "content": "Kuzosetshenziswa ukulamula ngaphambi kokuya kobumbano."
+      },
+      "s10": {
+        "title": "10. Ukuzihlangula",
+        "content": "Isevisi inikezwa \"njengoba injalo\"."
+      },
+      "agreement": "NGOKUSEBENZISA U-SPACE PARK, UYAQINISEKISA UKUTHI UFUNDILE FUTHI WAVUMA LE MIGOMO.",
+      "compliance": "Iyahambisana nezidingo ze-Google Play ne-Apple App Store."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "sw": "Kiswahili",
+    "fr": "Français",
+    "ar": "العربية",
+    "pt": "Português",
+    "am": "አማርኛ",
+    "ha": "Hausa",
+    "yo": "Yorùbá",
+    "zu": "isiZulu",
+    "es": "Español",
+    "de": "Deutsch"
+  }
+}

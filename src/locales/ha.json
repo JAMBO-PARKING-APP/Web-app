@@ -1,0 +1,545 @@
+{
+  "navbar": {
+    "logo": "Space Park",
+    "howItWorks": "Yadda Yake Aiki",
+    "benefits": "Fa'idodi",
+    "getApp": "Sami App",
+    "checkStatus": "Duba Matsayi",
+    "partnerLogin": "Shigar Abokan Tarayya",
+    "backToHome": "Koma Gida"
+  },
+  "hero": {
+    "badge": "Sami kuɗi daga filin ajiye motarka",
+    "title": "Mayar da Filinka zuwa Kuɗi na Gaske",
+    "sub": "Lissafta filin ajiye motarka akan Space Park kuma sami kuɗi duk lokacin da wani yayi parking. Nazarin lokaci na gaske, biyan kuɗi ta atomatik, da cikakken iko — duka a cikin dashboard ɗinka.",
+    "applyNow": "Nemi Yanzu — Kyauta",
+    "learnHow": "Koyi Yadda Yake Aiki"
+  },
+  "stats": {
+    "zones": "Yankunan Abokan Tarayya",
+    "parkers": "Masu Parking a Wata",
+    "commission": "Kwamishina Kawai",
+    "approval": "Lokacin Amincewa"
+  },
+  "process": {
+    "eyebrow": "Tsari Mai Sauƙi",
+    "title": "Farawa a Matakai 3",
+    "sub": "Sanya filin ajiye motarka a lissafi kuma fara samun kuɗi — ba a buƙatar ƙwarewar fasaha",
+    "step1": {
+      "label": "Mataki na 1",
+      "title": "Sanya Buƙatarka",
+      "desc": "Cika bayanan filinka, nuna wurinka akan taswira, kuma loda shaidar mallaka — yana ɗaukar ƙasa da mintuna 5."
+    },
+    "step2": {
+      "label": "Mataki na 2",
+      "title": "Samun Amincewa cikin Kwanaki",
+      "desc": "Ƙungiyarmu tana dubawa cikin kwanakin aiki 2-5. Duba matsayinka tare da ID ɗin Buƙatarka. Za ka sami bayanan shiga ta imel."
+    },
+    "step3": {
+      "label": "Mataki na 3",
+      "title": "Sami Kuɗi ta Atomatik",
+      "desc": "Yankinka zai fara aiki nan take. Kula da kuɗaɗen shiga, zama, da aiki kutoka dashboard ɗinka na abokan tarayya."
+    },
+    "guide": "Duba cikakken jagora"
+  },
+  "benefits": {
+    "eyebrow": "Me yasa Space Park",
+    "title": "Duk Abin da Kake Buƙata don Nasara",
+    "card1": {
+      "title": "Riƙe 90% na Kuɗaɗen Shiga",
+      "desc": "Muna ɗaukar kwamishina na 10% — babu kuɗaɗen ɓoye, babu kuɗin sanyawa, babu kuɗin kowane wata. Abin da ka samu naka ne."
+    },
+    "card2": {
+      "title": "Nazarin Lokaci na Gaske",
+      "desc": "Kula da yawan mutane, tarihin zama, da kuɗaɗen shiga na yau da kullun tare da dashboard mai kyau."
+    },
+    "card3": {
+      "title": "Biyan Kuɗi ta Banki ta Atomatik",
+      "desc": "Haɗa asusun bankinka sau ɗaya kuma sami biyan kuɗi ta atomatik — ba a buƙatar tsarin fitar da kuɗi da kanka."
+    },
+    "card4": {
+      "title": "Gani a Kan App Nan Take",
+      "desc": "Yankinka zai bayyana akan app ɗin Space Park da zarar an amince dashi, wanda dubban direbobi ke gani yau da kullun."
+    },
+    "card5": {
+      "title": "Tabbatacce kuma Mai Aminci",
+      "desc": "Ƙungiyarmu tana tabbatar da kowane fili, yana ba direbobi kwarin gwiwa da ƙara yawan masu parking a yankinka."
+    },
+    "card6": {
+      "title": "Gudanarwa da Kanka",
+      "desc": "Sabunta farashinka na sa'a, lokutan aiki, da bayanan yankinka daga dashboard ɗinka a kowane lokaci."
+    }
+  },
+  "mobile": {
+    "eyebrow": "App na Waya",
+    "title": "Direbobi Suna Samun Ka akan Space Park",
+    "sub": "Yankinka da aka lissafa yana bayyana nan take ga direbobi da ke amfani da app ɗin Space Park — nema, parking, da biya duka a wuri ɗaya.",
+    "card1": {
+      "title": "Nemo Parking",
+      "desc": "Direbobi suna neman wuraren da ake dasu kusa da inda zasu je a lokaci na gaske."
+    },
+    "card2": {
+      "title": "Biyan Kuɗi ta Dijital",
+      "desc": "Ana biyan kowane zama ta dandalin dijital — babu buƙatar karɓar kuɗi a hannu."
+    },
+    "card3": {
+      "title": "Bin Autun Zama",
+      "desc": "Fara, tsawaita, kuma ƙare zaman parking kutoka app tare da cikakken bayani."
+    },
+    "card4": {
+      "title": "Sanarwa Nan Take",
+      "desc": "Direbobi suna samun tunatarwa kuma kai kana samun sanarwar zama — komai ta atomatik."
+    }
+  },
+  "cta": {
+    "title": "Shirye don Fara Samun Kuɗi?",
+    "sub": "Kasance tare da ɗaruruwan masu filin ajiye motoci da ke samun kuɗi akan Space Park. Babu kuɗin nema.",
+    "apply": "Nemi Kyauta",
+    "status": "Duba Matsayin Buƙata"
+  },
+  "contact": {
+    "title": "Kuna da Tambayoyi?",
+    "sub": "Sanya duk tambayoyin da kuke dasu kuma ƙungiyarmu zata ba ku amsa."
+  },
+  "footer": {
+    "desc": "Hanya mafi kyau don samun kuɗi daga filin ajiye motarka. Haɗu da dubban direbobi kuma sami kuɗi ta atomatik.",
+    "portal": "Dandalin Abokan Tarayya",
+    "legal": "Shari'a",
+    "contactSupport": "Tuntuɓi Taimako",
+    "rights": "Duk haƙƙoƙi mallakar mu ne.",
+    "privacy": "Sirri",
+    "terms": "Shaɗoɗi"
+  },
+  "apply": {
+    "title": "Nemi don Lissafta Filinka",
+    "subtitle": "Cika fom ɗin da ke ƙasa don sanya yankin parking ɗinka akan Jambo Parking",
+    "steps": {
+      "personal": "Bayanin Kai",
+      "zone": "Bayanan Yanki",
+      "pin": "Nuna Wuri",
+      "submit": "Takardu & Turawa"
+    },
+    "personal": {
+      "title": "Bayananka na Kai",
+      "name": "Cikakken Suna",
+      "email": "Adireshin Imel",
+      "phone": "Lambar Waya",
+      "namePlaceholder": "John Kamau",
+      "emailPlaceholder": "john@example.com",
+      "phonePlaceholder": "+254712345678"
+    },
+    "zone": {
+      "title": "Bayanan Yanki",
+      "name": "Sunan Yanki da aka Ba da Shawara",
+      "address": "Adireshin Wuri",
+      "slots": "Adadin Wuraren Parking",
+      "rate": "Farashin Sa'a (Kuɗin Gida)",
+      "hours": "Lokutan Aiki",
+      "surface": "Irin Filin",
+      "surfaceOptions": {
+        "paved": "Siminti / Kwalta",
+        "gravel": "Tsakuwa / Ƙasa",
+        "indoor": "Ciki / Gareji"
+      },
+      "security": "Akwai mai tsaro a wurin",
+      "cctv": "Akwai kyamarar tsaro (CCTV)",
+      "instructions": "Jagorar Shiga (na zaɓi)",
+      "instructionsPlaceholder": "Yaya ya kamata direbobi su sami ko su shiga wurin?"
+    },
+    "map": {
+      "title": "Nuna Wurinka",
+      "sub": "Danna akan taswira don sanya nuni daidai inda filin parking ɗinka yake.",
+      "success": "An nuna wuri a {{lat}}, {{lng}}"
+    },
+    "review": {
+      "title": "Dubawa & Turawa",
+      "sub": "Loda shaidar mallaka (DOLE), sannan ka tura buƙatarka.",
+      "summary": {
+        "applicant": "Mai Nema",
+        "email": "Imel",
+        "phone": "Waya",
+        "zoneName": "Sunan Yanki",
+        "address": "Adireshin",
+        "slots": "Wurare",
+        "rate": "Farashin Sa'a",
+        "hours": "Sa'o'i",
+        "location": "Wuri"
+      },
+      "upload": "Shaidar Mallaka / ID (DOLE)",
+      "terms": "Shaɗoɗi da Halaye",
+      "agree": "Na karanta kuma na yarda da Shaɗoɗi da Halaye"
+    },
+    "nav": {
+      "back": "Koma",
+      "next": "Gaba",
+      "submitting": "Ana Turawa...",
+      "submit": "Tura Buƙatar"
+    },
+    "error": {
+      "personal": "Da fatan za ka cika dukkan bayanan kai.",
+      "zone": "Da fatan za a cika dukkan bayanan yankin.",
+      "pin": "Da fatan za a danna kan taswirar don sanya wurin yankin ku.",
+      "upload": "Da fatan za a loda shaidar mallaka (PNG, JPG ko PDF).",
+      "generic": "Mika ya gaza. Da fatan za a sake gwadawa."
+    }
+  },
+  "locate": {
+    "title": "Nemo Ni",
+    "here": "Kuna nan",
+    "error": "An hana shiga wurin ko ba a samun sa."
+  },
+  "addZone": {
+    "title": "Ƙara Sabon Yanki",
+    "sub": "Aika buƙatar ƙara wani wurin ajiye motoci a ƙarƙashin asusun ku.",
+    "subtitle": "Aika buƙatar ƙara wani wurin ajiye motoci a ƙarƙashin asusun ku.",
+    "successTitle": "An Tura Buƙatar Yanki!",
+    "successMsg": "Nasarar! An tura buƙatarka ({{id}}) kuma ana duba ta.",
+    "returnBtn": "Koma Dashboard",
+    "form": {
+      "name": "Sunan Yanki da aka Ba da Shawara",
+      "namePlaceholder": "misali: Reshen Westlands",
+      "address": "Adireshin Wuri",
+      "addressPlaceholder": "Sunan Titi, Yanki",
+      "slots": "Adadin Wuraren da ke Akwai",
+      "slotsPlaceholder": "Adadin wurare",
+      "rate": "Shawarar Kuɗin Sa'a guda (KES/GHS)",
+      "ratePlaceholder": "misali. 150.00",
+      "hours": "Lokutan Aiki",
+      "hoursPlaceholder": "misali. 24/7 ko 8 na safe - 6 na yamma",
+      "map": "Sanya Wuri a taswirar",
+      "mapSub": "Danna ko'ina akan taswira don sanya yankin parking ɗinka daidai.",
+      "mapLocation": {
+        "label": "Nuna Wuri akan Taswira",
+        "instruction": "Danna ko'ina akan taswira don sanya yankin parking ɗinka daidai."
+      },
+      "parkingSurface": {
+        "label": "Saman Filin Parking"
+      },
+      "surface": "Saman Filin Parking",
+      "security": "Tsaro a Wurin",
+      "cctv": "Kyamarar Tsaro (CCTV)",
+      "submitting": "Ana Tura Buƙatar...",
+      "submit": "Aika Buƙatar Yanki"
+    },
+    "nav": {
+      "submitting": "Ana aika buƙata...",
+      "submit": "Aika Buƙatar Yanki"
+    },
+    "errorMsg": "Mika ya gaza. Da fatan za a duba abubuwan da kuka shigar."
+  },
+  "login": {
+    "title": "Dandalin Abokan Tarayya",
+    "subtitle": "Shiga don sarrafa yankin parking ɗinka",
+    "email": "Adireshin Imel",
+    "password": "Kalmar Sirri",
+    "signin": "Shiga",
+    "signingIn": "Ana Shiga...",
+    "noAccount": "Baka da asusu?",
+    "applyLink": "Nemi zama abokin tarayya",
+    "statusLink": "Duba matsayin buƙatarka",
+    "error": "Shiga bai yi nasara ba. Da fatan za ka duba bayanan ka."
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "addZone": "Ƙara Yanki",
+    "bankDetails": "Bayanan Banki",
+    "changePassword": "Canza Kalmar Sirri",
+    "darkMode": "Yanayin Duhu",
+    "lightMode": "Yanayin Haske",
+    "signOut": "Fita",
+    "role": "Mai Gida",
+    "owner": "Mai Gida"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Barka da dawowa! Ga yadda wurinka yake aiki.",
+    "loading": "Ana loda dashboard ɗinka...",
+    "error": "Loda dashboard ya gaza. Da fatan za ka sake gwadawa.",
+    "stats": {
+      "totalEarnings": "Jimillar Kuɗi",
+      "thisMonth": "Wannan Watan",
+      "today": "Yau",
+      "activeSessions": "Zama Masu Aiki",
+      "zones": "Yankuna",
+      "allTime": "Duk Lokaci",
+      "currentMonth": "Watan Yanzu",
+      "todaySub": "Kuɗin Yau",
+      "activeSub": "{{count}} a yau",
+      "zonesSub": "Yankuna Masu Aiki"
+    },
+    "charts": {
+      "earningsTitle": "Samun Kuɗi — Kwanaki 30 na Baya",
+      "noData": "Babu bayanan kuɗi tukunna. Za su bayyana nan da zama ya ƙare.",
+      "revenueSplit": "Raba Kuɗi ta Yanki"
+    },
+    "table": {
+      "zonesTitle": "Yankunanka",
+      "colZone": "Yanki",
+      "colSlots": "Wurare",
+      "colRate": "Farashin Sa'a",
+      "colActive": "Zama Masu Aiki",
+      "colOccupancy": "Yawan Mutane",
+      "colCommission": "Kwamishina",
+      "sessionsTitle": "Zama na Kwanan Nan",
+      "colVehicle": "Mota",
+      "colStart": "Lokacin Fara",
+      "colStatus": "Matsayi",
+      "colAmount": "Adadi",
+      "noSessions": "Babu zama tukunna. Za su bayyana nan da direbobi suka fara parking."
+    }
+  },
+  "success": {
+    "title": "An Tura Buƙata!",
+    "subtitle": "An karɓi buƙatarka. Ƙungiyarmu zata duba ta cikin kwanakin aiki 2-5 kuma zamu sanar dakai ta imel.",
+    "appIdLabel": "ID ɗin Buƙatarka",
+    "copyId": "Kwafi ID",
+    "copied": "An Kwafi!",
+    "saveIdTip": "Ajiye wannan ID — zaka buƙace shi don duba matsayin buƙatarka",
+    "checkStatus": "Duba Matsayi",
+    "backHome": "Koma Gida"
+  },
+  "status": {
+    "title": "Duba Matsayin Buƙata",
+    "subtitle": "Sanya ID ɗin buƙatarka don ganin matsayin turawarka",
+    "label": "ID ɗin Buƙata",
+    "placeholder": "misali: a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "checking": "Ana Dubawa...",
+    "checkBtn": "Duba Matsayi",
+    "error": {
+      "empty": "Da fatan za ka sanya ID ɗin buƙata.",
+      "notFound": "Ba'a sami buƙata da wannan ID ɗin ba. Da fatan za ka duba.",
+      "generic": "Wani abu ya faru. Da fatan za ka sake gwadawa."
+    },
+    "states": {
+      "pending": {
+        "label": "Ana Dubawa",
+        "msg": "Ƙungiyarmu tana duba buƙatarka. Yawanci yana ɗaukar kwanakin aiki 2-5."
+      },
+      "approved": {
+        "label": "An Amince",
+        "msg": "Taya murna! An amince da yankinka kuma yanzu yana aiki. Duba imel ɗinka don bayanan shiga."
+      },
+      "rejected": {
+        "label": "Ba'a Amince ba",
+        "msg": "Abin tausayi ba'a amince da buƙatarka ba a wannan lokacin. Da fatan za ka duba bayanan ko tuntuɓi taimako."
+      }
+    },
+    "notes": "Bayanan Admin:",
+    "submittedOn": "An tura a {{date}}",
+    "loginBtn": "→ Shiga Dashboard ɗin Abokan Tarayya"
+  },
+  "bank": {
+    "title": "Bayanan Banki",
+    "subtitle": "Sarrafa asusunka don karɓar biyan kuɗi",
+    "info": "Ana kiyaye wannan bayanin kuma ana amfani dashi ne kawai don tura kuɗin da ka samu.",
+    "bankName": "Sunan Banki",
+    "bankNamePlaceholder": "misali: KCB Bank, Equity Bank",
+    "accountNumber": "Lambar Asusu",
+    "accountNumberPlaceholder": "Lambar asusun bankinka",
+    "accountHolder": "Sunan Mai Asusu",
+    "accountHolderPlaceholder": "Suna kamar yadda yake a asusun",
+    "saveBtn": "Ajiye Bayanan Banki",
+    "saving": "Ana Ajiye...",
+    "error": {
+      "required": "Dole ne a cika dukkan wuraren.",
+      "generic": "Ajiye ya gaza."
+    },
+    "success": "An ajiye bayanan banki cikin nasara."
+  },
+  "password": {
+    "title": "Canza Kalmar Sirri",
+    "subtitle": "Sabunta kalmar sirrinka don kiyaye asusunka",
+    "current": "Kalmar Sirri ta Yanzu",
+    "currentPlaceholder": "Kalmar sirrinka ta yanzu",
+    "new": "Sabuwar Kalmar Sirri",
+    "newPlaceholder": "Aƙalla haruffa 8",
+    "confirm": "Tabbatar da Sabuwar Kalmar Sirri",
+    "confirmPlaceholder": "Sake rubuta sabuwar kalmar sirri",
+    "updateBtn": "Sabunta",
+    "updating": "Ana Sabunta...",
+    "tip": "Bayan canza kalmar sirri, zaka buƙaci sake shiga akan dukkan na'urorinka.",
+    "error": {
+      "mismatch": "Sabbin kalmomin sirri basu zo ɗaya ba.",
+      "length": "Dole kalmar sirri ta kai haruffa 8.",
+      "generic": "Canza kalmar sirri ya gaza."
+    }
+  },
+  "howItWorks": {
+    "title": "Yadda Space Park Yake Aiki",
+    "subtitle": "Space Park yana haɗa masu filayen parking masu zaman kansu da direbobi. Ga yadda tsarin yake aiki tun daga nema har zuwa biyan kuɗi na farko.",
+    "programme": "Tsarin Abokan Tarayya",
+    "steps": {
+      "1": {
+        "title": "Sanya Buƙatarka",
+        "desc": "Cika wani gajeren fom tare da bayananka da na yankinka — suna, adireshi, adadin wurare da farashin sa'a. Nuna wurin akan taswira. Yana ɗaukar ƙasa da mintuna 5."
+      },
+      "2": {
+        "title": "Duba Buƙata",
+        "desc": "Ƙungiyarmu tana duba buƙatarka cikin kwanakin aiki 2-5. Zamu iya kiran ka don tabbatar da mallaka. Duba matsayinka da ID ɗinka."
+      },
+      "3": {
+        "title": "Amincewa & Farawa",
+        "desc": "Da zarar an amince, ana samar da yankinka akan Space Park kuma direbobi zasu ganshi. Zaka sami imel na shiga."
+      },
+      "4": {
+        "title": "Sanya Bayanan Biyan Kuɗi",
+        "desc": "Lokacin shigarka na farko, sanya bayanan bankinka. Nan ne zamu tura maka kuɗinka tsafe — babu buƙatar cirewa da kanka."
+      },
+      "5": {
+        "title": "Kula da Kuɗinka",
+        "desc": "Yi amfani da Dashboard don ganin masu amfani, tarihin zama, kuɗin yau da na wata, da fasalin aiki tare da hotuna."
+      },
+      "6": {
+        "title": "Karɓi Biyan Kuɗinka",
+        "desc": "Ana lissafa kuɗin kowane zama ta atomatik, a rage kwamishinarmu, a tura maka ragowar zuwa asusun bankinka tsafe."
+      }
+    },
+    "faq": {
+      "title": "Tambayoyin da Ake Yawan Yi",
+      "q1": "Nawa ne Space Park yake ɗauka?",
+      "a1": "Space Park yana ɗaukar kwamishina na 10% akan kowane zama. Kana riƙe da 90%. Ana ganin ragin a dashboard ɗinka.",
+      "q2": "Yaushe zan sami biyan kuɗi?",
+      "a2": "Ana tura kuɗi zuwa asusunka tsafe — yawanci cikin kwanakin aiki 3-5 bayan zama ya ƙare.",
+      "q3": "Zan iya saka nawa farashin?",
+      "a3": "Haka ne! Kana bada shawarar farashinka lokacin nema. Idan aka amince, zaka iya tuntuɓar mu don canzawa.",
+      "q4": "Idan direba ya ɓata min wuri fa?",
+      "a4": "Ana riƙe duk bayanan mota da lokacin zama. Taimakonmu zai taimaka wurin warware duk wata matsala.",
+      "q5": "Yaya app ɗin yake aiki?",
+      "a5": "Direbobi suna ganin yankinka akan taswira, duba idan akwai fili, su biya ta dijital — babu kuɗi a hannu.",
+      "q6": "Zan iya tsayar da yankina na wani lokaci?",
+      "a6": "Haka ne — tuntuɓi taimako ko tura imel zuwa support@spacepark.com don tsayar da shi ba tare da rasa asusunka ba."
+    },
+    "applyBtn": "Zama Abokin Tarayya"
+  },
+  "common": {
+    "optional": "(na zaɓi)",
+    "mandatory": "(DOLE)",
+    "step": "Mataki"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Manufar Sirri",
+      "date": "Ranar Fara Aiki: 9 ga Fabrairu, 2026 · Sabuntawa: 9 ga Fabrairu, 2026",
+      "s1": {
+        "title": "1. Gabatarwa",
+        "content": "Mun duƙufa wurin kiyaye sirrinka da tsaron bayananka na kai. Wannan manufar tana bayyana yadda muke tattarawa da amfani da bayananka."
+      },
+      "s2": {
+        "title": "2. Bayanan da Muke Tattarawa",
+        "item1": "Lambar Waya – don shiga da tabbatarwa",
+        "item2": "Suna – don gane asusunka",
+        "item3": "Imel – don sanarwa da tuntuba",
+        "item4": "Wurin Yanki – adireshi da mizanin wuri",
+        "item5": "Bayanan Banki – don tura kuɗi",
+        "item6": "Takardu – shaidar mallaka",
+        "item7": "Bayanan Amfani – zama, kuɗi, da ayyuka"
+      },
+      "s3": {
+        "title": "3. Yadda Muke Amfani da Bayananka",
+        "item1": "Sarrafa asusunka na abokan tarayya",
+        "item2": "Bin diddigin zama da lissafa kuɗi",
+        "item3": "Tura kuɗi zuwa asusun bankinka",
+        "item4": "Aika sanarwa",
+        "item5": "Bayar da taimako",
+        "item6": "Inganta ayyukanmu",
+        "item7": "Bin dokokin ƙasa"
+      },
+      "s4": {
+        "title": "4. Raba Bayanai",
+        "content": "Ba ma sayar da bayananka. Zamu iya raba bayanai da masu bada sabis (masu biyan kuɗi) ko hukuma idan doka ta buƙaci hakan."
+      },
+      "s5": {
+        "title": "5. Tsaro",
+        "item1": "Inkirifshin na SSL/TLS",
+        "item2": "Ajiye bayanai a sabobi masu tsaro",
+        "item3": "Iyaka wurin shigar ma'aikata",
+        "item4": "Duba tsaro akai-akai"
+      },
+      "s6": {
+        "title": "6. Haƙƙoƙinka",
+        "item1": "Shiga cikin bayananka",
+        "item2": "Gyara kuskure",
+        "item3": "Neman goge asusu",
+        "item4": "Fita daga sanarwa",
+        "item5": "Fitar da bayananka"
+      },
+      "s7": {
+        "title": "7. Sirrin Yara",
+        "content": "Sabis ɗinmu ba na yara bane ƙasa da shekara 13."
+      },
+      "s8": {
+        "title": "8. Tuntubarmu",
+        "emailLabel": "Imel",
+        "phoneLabel": "Waya"
+      },
+      "consent": "Ta amfani da Space Park, ka yarda da wannan Manufar Sirri."
+    },
+    "terms": {
+      "title": "Shaɗoɗin Sabis",
+      "date": "Ranar Fara Aiki: 9 ga Fabrairu, 2026",
+      "s1": {
+        "title": "1. Yardawa",
+        "content": "Ta amfani da Space Park, ka yarda ka bi waɗannan shaɗoɗin."
+      },
+      "s2": {
+        "title": "2. Cancanta da Nauyi",
+        "item1": "Dole ne ka kai shekara 18.",
+        "item2": "Bayananka dole ya zama tabbatacce.",
+        "item3": "Bi dokokin mallakar fili na gida.",
+        "item4": "Kai ne kake da alhakin asusunka."
+      },
+      "s3": {
+        "title": "3. Tsaron Asusu",
+        "item1": "Kiyaye bayanan shigarka.",
+        "item2": "Zamu iya tsayar da asusun da ba mu yarda da shi ba.",
+        "item3": "Sanar da mu idan an yi amfani da asusunka ba tare da izininka ba."
+      },
+      "s4": {
+        "title": "4. Ayyukan Abokan Tarayya",
+        "content": "Space Park yana baka dandalin lissafta filinka a dijital."
+      },
+      "s5": {
+        "title": "5. Shaɗoɗin Kuɗi",
+        "item1": "Farashi ya haɗa da haraji.",
+        "item2": "Kuɗi ana lissafa su bayan ragi na kwamishina.",
+        "item3": "Ana tura kuɗi zuwa asusun banki da ka bayar.",
+        "item4": "Duk wata matsalar kuɗi a sanar da mu nan da kwanaki 7."
+      },
+      "s6": {
+        "title": "6. Sirri",
+        "content": "Duk amfani da bayanai yana ƙarƙashin Manufar Sirri."
+      },
+      "s7": {
+        "title": "7. Karya Shaɗoɗi",
+        "content": "Duk wani saɓon zai iya kaiwa ga rufe asusu nan take."
+      },
+      "s8": {
+        "title": "8. Haƙƙin Mallaka",
+        "content": "Duk abubuwan da ke ciki mallakar Space Park Ltd ne."
+      },
+      "s9": {
+        "title": "9. Warware Matsala",
+        "content": "Zamu yi ƙoƙarin warware matsala cikin lumana."
+      },
+      "s10": {
+        "title": "10. Kare Kai",
+        "content": "Ana bada sabis ɗin ne \"kamar yadda yake\"."
+      },
+      "agreement": "TA AMFANI DA SPACE PARK, KA TABBATAR KA KARANTA KUMA KA YARDA DA WAƊANNAN SHAƊOƊIN.",
+      "compliance": "Ya dace da shaɗoɗin Google Play da Apple App Store."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "sw": "Kiswahili",
+    "fr": "Français",
+    "ar": "العربية",
+    "pt": "Português",
+    "am": "አማርኛ",
+    "ha": "Hausa",
+    "yo": "Yorùbá",
+    "zu": "isiZulu",
+    "es": "Español",
+    "de": "Deutsch"
+  }
+}

@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { api } from '../AuthContext';
+import { useTranslation } from 'react-i18next';
 import Sidebar from '../components/Sidebar';
 import { AlertTriangle, CheckCircle2, Lightbulb } from 'lucide-react';
 
 export default function ChangePasswordPage() {
+  const { t } = useTranslation();
   const [form, setForm] = useState({ old_password: '', new_password: '', confirm_password: '' });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -13,15 +15,15 @@ export default function ChangePasswordPage() {
   const handleSubmit = async e => {
     e.preventDefault();
     setError(''); setSuccess('');
-    if (form.new_password !== form.confirm_password) { setError('New passwords do not match.'); return; }
-    if (form.new_password.length < 8) { setError('Password must be at least 8 characters.'); return; }
+    if (form.new_password !== form.confirm_password) { setError(t('password.error.mismatch')); return; }
+    if (form.new_password.length < 8) { setError(t('password.error.length')); return; }
     setLoading(true);
     try {
       const res = await api.post('/change-password/', form);
       setSuccess(res.data.message);
       setForm({ old_password: '', new_password: '', confirm_password: '' });
     } catch (e) {
-      setError(e.response?.data?.error || 'Failed to change password.');
+      setError(e.response?.data?.error || t('password.error.generic'));
     } finally { setLoading(false); }
   };
 
@@ -30,8 +32,8 @@ export default function ChangePasswordPage() {
       <Sidebar />
       <main className="dashboard-main">
         <div className="dashboard-header">
-          <h1>Change Password</h1>
-          <p>Update your account password to keep it secure</p>
+          <h1>{t('password.title')}</h1>
+          <p>{t('password.subtitle')}</p>
         </div>
 
         <div style={{ maxWidth: 480 }}>
@@ -41,28 +43,28 @@ export default function ChangePasswordPage() {
 
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <label>Current Password</label>
-                <input className="form-input" type="password" placeholder="Your current password"
+                <label>{t('password.current')}</label>
+                <input className="form-input" type="password" placeholder={t('password.currentPlaceholder')}
                   value={form.old_password} onChange={e => set('old_password', e.target.value)} required />
               </div>
               <div className="form-group">
-                <label>New Password</label>
-                <input className="form-input" type="password" placeholder="At least 8 characters"
+                <label>{t('password.new')}</label>
+                <input className="form-input" type="password" placeholder={t('password.newPlaceholder')}
                   value={form.new_password} onChange={e => set('new_password', e.target.value)} required />
               </div>
               <div className="form-group">
-                <label>Confirm New Password</label>
-                <input className="form-input" type="password" placeholder="Repeat new password"
+                <label>{t('password.confirm')}</label>
+                <input className="form-input" type="password" placeholder={t('password.confirmPlaceholder')}
                   value={form.confirm_password} onChange={e => set('confirm_password', e.target.value)} required />
               </div>
               <button type="submit" className="btn-primary" disabled={loading} style={{ width: '100%', justifyContent: 'center', marginTop: 8 }}>
-                <span>{loading ? 'Updating...' : 'Update Password'}</span>
+                <span>{loading ? t('password.updating') : t('password.updateBtn')}</span>
               </button>
             </form>
           </div>
 
           <div className="alert alert-info" style={{ marginTop: 16 }}>
-            <Lightbulb className="inline-icon" size={18} /> After changing your password, you will need to log in again on all your devices.
+            <Lightbulb className="inline-icon" size={18} /> {t('password.tip')}
           </div>
         </div>
       </main>

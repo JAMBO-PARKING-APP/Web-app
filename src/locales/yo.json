@@ -1,0 +1,553 @@
+{
+  "navbar": {
+    "logo": "Space Park",
+    "howItWorks": "Bí Ó Ṣe Ń Ṣiṣẹ́",
+    "benefits": "Àǹfààní",
+    "getApp": "Gba App",
+    "checkStatus": "Ṣayẹwo Ipò",
+    "partnerLogin": "Ìwọlé Alábàáṣiṣẹ́",
+    "backToHome": "Padà sí Ilé"
+  },
+  "hero": {
+    "badge": "Gba owó látara ibi ìgbọ́kọ̀sí rẹ",
+    "title": "Sọ Ààyè Rẹ di Owó Gidi",
+    "sub": "Forúkọ ibi ìgbọ́kọ̀sí rẹ sílẹ̀ lórí Space Park kí o sì máa gba owó ní gbogbo ìgbà tí ẹnì kan bá gbé ọkọ̀ síbẹ̀. Ìṣirò lẹ́sẹ̀kẹsẹ̀, sísan owó fúnra rẹ, àti ìdarí kíkún — gbogbo rẹ̀ nínú dashboard rẹ.",
+    "applyNow": "Wà fún Ìforúkọsílẹ̀ — Ọ̀fẹ́",
+    "learnHow": "Mọ Bí Ó Ṣe Ń Ṣiṣẹ́"
+  },
+  "stats": {
+    "zones": "Agbègbè Alábàáṣiṣẹ́",
+    "parkers": "Àwọn tó ń gbé ọkọ̀ síbẹ̀ lóṣù",
+    "commission": "Ìdáwó Nìkan",
+    "approval": "Àkókò Ìfọwọ́sí"
+  },
+  "process": {
+    "eyebrow": "Ìlànà Rọrùn",
+    "title": "Bẹ̀rẹ̀ ní Ìgbésẹ̀ 3",
+    "sub": "Forúkọ ibi ìgbọ́kọ̀sí rẹ sílẹ̀ kí o sì bẹ̀rẹ̀ sí í gbowó — kò nílò ìmọ̀ ẹ̀rọ kankan",
+    "step1": {
+      "label": "Ìgbésẹ̀ 1",
+      "title": "Fi Ìwé Ìbèèrè Rẹ Ránṣẹ́",
+      "desc": "Kọ àwọn kúlẹ̀kúlẹ̀ nípa ààyè rẹ, sọ ibi tí ó wà lórí map, kí o sì gbé ẹ̀rí ìní rẹ jáde — kò ju ìṣẹ́jú 5 lọ."
+    },
+    "step2": {
+      "label": "Ìgbésẹ̀ 2",
+      "title": "Gba Ìfọwọ́sí láàárín Ọjọ́ Kíyìí",
+      "desc": "Ẹgbẹ́ wa yóò ṣàyẹ̀wò láàárín ọjọ́ iṣẹ́ 2-5. Ṣàyẹ̀wò ipò rẹ pẹ̀lú ID rẹ. O ó gba ọ̀nà ìwọlé rẹ nípasẹ̀ email."
+    },
+    "step3": {
+      "label": "Ìgbésẹ̀ 3",
+      "title": "Gbowó fúnra rẹ̀",
+      "desc": "Agbègbè rẹ yóò bẹ̀rẹ̀ iṣẹ́ lẹ́sẹ̀kẹsẹ̀. Bojútó owó tí ò ń pa, àwọn ìgbà tí wọ́n gbé ọkọ̀ síbẹ̀, àti iṣẹ́ rẹ látinú dashboard rẹ."
+    },
+    "guide": "Wo ìtọ́sọ́nà kíkún"
+  },
+  "benefits": {
+    "eyebrow": "Kí nìdí Space Park",
+    "title": "Gbogbo Ohun tí O Nílò Láti Ṣe Àṣeyọrí",
+    "card1": {
+      "title": "Mú 90% Owó Rẹ Dání",
+      "desc": "A ń gba 10% nìkan — kò sí owó kankan tó pamọ́. Ohun tí o bá pa jẹ́ tìẹ."
+    },
+    "card2": {
+      "title": "Ìṣirò Lẹ́sẹ̀kẹsẹ̀",
+      "desc": "Bojútó bí àwọn ènìyàn ṣe ń gbé ọkọ̀ síbẹ̀, ìtàn ìgbọ́kọ̀sí, àti owó ojoojúmọ́ pẹ̀lú dashboard rẹ."
+    },
+    "card3": {
+      "title": "Sísan Owó sí Banki fúnra rẹ̀",
+      "desc": "So àkánǹtì banki rẹ pọ̀ lẹ́ẹ̀kan ṣoṣo kí o sì gba owó rẹ fúnra rẹ̀ — kò nílò láti lọ tọrọ owó yíyọ."
+    },
+    "card4": {
+      "title": "Ìfarahàn lórí App lẹ́sẹ̀kẹsẹ̀",
+      "desc": "Agbègbè rẹ yóò hàn lórí app Space Park ní kété tí a bá fọwọ́ sí i, tí ẹgbẹẹgbẹ̀rún àwọn awakọ̀ yóò máa rí."
+    },
+    "card5": {
+      "title": "Tí a fọwọ́ sí àti Olótìítọ́",
+      "desc": "Ẹgbẹ́ wa ń ṣàyẹ̀wò gbogbo ààyè tí a forúkọ rẹ̀ sílẹ̀, èyí ń fún àwọn awakọ̀ ní ìgbọ́kànlé láti gbé ọkọ̀ síbẹ̀."
+    },
+    "card6": {
+      "title": "Ìṣàkóso fúnra rẹ",
+      "desc": "Ṣàtúnṣe iye owó wákàtí rẹ, àkókò iṣẹ́, àti kúlẹ̀kúlẹ̀ agbègbè rẹ látinú dashboard rẹ nígbà kígbà."
+    }
+  },
+  "mobile": {
+    "eyebrow": "App Orí Fóònù",
+    "title": "Àwọn Awakọ̀ ń Rí Ẹ lórí Space Park",
+    "sub": "Agbègbè rẹ yóò hàn lẹ́sẹ̀kẹsẹ̀ sí àwọn awakọ̀ tó ń lo app Space Park — wá ibi ìgbọ́kọ̀sí, gbé ọkọ̀ síbẹ̀, kí o sì sanwó lójú kan náà.",
+    "card1": {
+      "title": "Wá Ibi Ìgbọ́kọ̀sí",
+      "desc": "Àwọn awakọ̀ ń wá àwọn agbègbè tó wà nítòsí ibi tí wọ́n ń lọ lẹ́sẹ̀kẹsẹ̀."
+    },
+    "card2": {
+      "title": "Ìsanwó láìlo Owó Gidi",
+      "desc": "Sísan owó kọ̀ọ̀kan jẹ́ látorí ẹ̀rọ — kò sí ìdààmú kankan nípa kíkó owó dání níhà rẹ."
+    },
+    "card3": {
+      "title": "Títẹ̀lé Ìgbọ́kọ̀sí",
+      "desc": "Bẹ̀rẹ̀, fẹ̀ kí o sì parí ìgbà ìgbọ́kọ̀sí látorí app pẹ̀lú gbogbo àkọsílẹ̀ kíkún."
+    },
+    "card4": {
+      "title": "Ìfitónilétí Lẹ́sẹ̀kẹsẹ̀",
+      "desc": "Àwọn awakọ̀ yóò gba ìránnilétí, ìwọ náà á sì gba ìfitónilétí nípa ìgbọ́kọ̀sí kọ̀ọ̀kan."
+    }
+  },
+  "cta": {
+    "title": "Ṣé O Ti Setán Láti Bẹ̀rẹ̀ sí í Gbowó?",
+    "sub": "Darapọ̀ mọ́ ọgọọgọrun àwọn olówó ibi ìgbọ́kọ̀sí tó ti ń gbowó lórí Space Park. Ọ̀fẹ́ ni láti forúkọsílẹ̀.",
+    "apply": "Forúkọsílẹ̀ lọ́fẹ́",
+    "status": "Ṣàyẹ̀wò Ipò Ìforúkọsílẹ̀ Rẹ"
+  },
+  "contact": {
+    "title": "Ṣé O Ní Ìbéèrè?",
+    "sub": "Fi ìbéèrè rẹ ránṣẹ́ kí ẹgbẹ́ wa lè fèsì padà sí ẹ."
+  },
+  "footer": {
+    "desc": "Ọ̀nà tó gbọ́n láti gba owó látara ààyè rẹ. Sopọ̀ mọ́ ẹgbẹẹgbẹ̀rún awakọ̀ kí o sì gbowó fúnra rẹ.",
+    "portal": "Ojú-ewé Alábàáṣiṣẹ́",
+    "legal": "Òfin",
+    "contactSupport": "Kàn sí Aláyẹ̀wò",
+    "rights": "Gbogbo ọ̀nà ni a ti dínà.",
+    "privacy": "Ìpamọ́",
+    "terms": "Àwọn Àdéhùn"
+  },
+  "apply": {
+    "title": "Forúkọ Ibi Ìgbọ́kọ̀sí Rẹ Sílẹ̀",
+    "subtitle": "Kọ gbogbo rẹ̀ sílẹ̀ nínú fọ́ọ̀mù yìí láti sọ agbègbè rẹ di mímọ̀ lórí Jambo Parking",
+    "steps": {
+      "personal": "Kúlẹ̀kúlẹ̀ Ara Rẹ",
+      "zone": "Kúlẹ̀kúlẹ̀ Agbègbè Rẹ",
+      "pin": "Sọ Ibi Tí Ó Wà",
+      "submit": "Ìwé àti Ìfi ránṣẹ́"
+    },
+    "personal": {
+      "title": "Àwọn Kúlẹ̀kúlẹ̀ Ara Rẹ",
+      "name": "Orúkọ Kíkún",
+      "email": "Àdírẹ́sì Email",
+      "phone": "Nọ́mbà Fóònù",
+      "namePlaceholder": "John Kamau",
+      "emailPlaceholder": "john@example.com",
+      "phonePlaceholder": "+254712345678"
+    },
+    "zone": {
+      "title": "Kúlẹ̀kúlẹ̀ Agbègbè rẹ",
+      "name": "Orúkọ Agbègbè náà",
+      "address": "Àdírẹ́sì",
+      "slots": "Iye Ibi Ìgbọ́kọ̀sí tó wà",
+      "rate": "Owó Wákàtí (Owó Orílẹ̀-èdè rẹ)",
+      "hours": "Àkókò Iṣẹ́",
+      "surface": "Irú ilẹ̀ tó wà",
+      "surfaceOptions": {
+        "paved": "Símẹ́ǹtì / Kwálta",
+        "gravel": "Okúta / Erùpẹ̀",
+        "indoor": "Nínú Ilé / Gáráàjì"
+      },
+      "security": "Alùṣọ́ wà níbẹ̀",
+      "cctv": "Kámẹ́rà ààbò (CCTV) wà níbẹ̀",
+      "instructions": "Ìtọ́sọ́nà ìwọlé (bí o bá fẹ́)",
+      "instructionsPlaceholder": "Báwo ni àwọn awakọ̀ ṣe lè rí i tàbí wọ inú rẹ̀?"
+    },
+    "map": {
+      "title": "Sọ Ibi Tí Agbègbè Rẹ Wà",
+      "sub": "Tẹ orí map láti sọ ibi tí ibi ìgbọ́kọ̀sí rẹ wà gan-an.",
+      "success": "A ti sọ ibi tó wà ní {{lat}}, {{lng}}"
+    },
+    "review": {
+      "title": "Àyẹ̀wò & Ìfiránṣẹ́",
+      "sub": "Gbé ẹ̀rí ìní rẹ jáde (DANDAN), kí o sì fi ìwé rẹ ránṣẹ́.",
+      "summary": {
+        "applicant": "Olùbèèrè",
+        "email": "Email",
+        "phone": "Fóònù",
+        "zoneName": "Orúkọ Agbègbè",
+        "address": "Àdírẹ́sì",
+        "slots": "Ààyè",
+        "rate": "Owó Wákàtí",
+        "hours": "Wákàtí",
+        "location": "Ibi tó wà"
+      },
+      "upload": "6ẹ́rí Ìní / ID (DANDAN)",
+      "terms": "Àwọn Àdéhùn",
+      "agree": "Mo ti kà á, mo sì fara mọ́ Àwọn Àdéhùn"
+    },
+    "nav": {
+      "back": "Padà",
+      "next": "Gaba",
+      "submitting": "À ń firánṣẹ́...",
+      "submit": "Fi Ìwé Rẹ Ránṣẹ́"
+    },
+    "error": {
+      "personal": "Jọ̀wọ́ kọ gbogbo kúlẹ̀kúlẹ̀ ara rẹ sílẹ̀.",
+      "zone": "Inú rẹ dùn gba jọ̀wọ́ kí o kún gbogbo àwọn kúlẹ̀kúlẹ̀ agbègbè náà.",
+      "pin": "Jọ̀wọ́ tẹ orí máàpù láti fi àmì sí ibi tí agbègbè rẹ wà.",
+      "upload": "Jọ̀wọ́ gbé ẹ̀rí ìní rẹ sókè (PNG, JPG tàbí PDF).",
+      "generic": "Ìfisílẹ̀ kùnà. Jọ̀wọ́ tún dánwò.",
+      "terms_text": "Nípa títẹ orúkọ ààyè rẹ sílẹ̀ lórí Space Park, o gbà sí àwọn nǹkan wọ̀nyí:",
+      "terms_list": {
+        "accuracy": "Ìpéye: O jẹ́rìí sí i pé gbogbo ìsọfúnni tí o pèsè nípa agbègbè náà (ibùdó, owó, àwọn ààyè) jẹ́ òtítọ́.",
+        "ownership": "Ìní: O jẹ́rìí sí i pé o ni tàbí o ní àṣẹ láti ya ààyè ìgbọ́kọ̀sí náà.",
+        "safety": "Ààbò: O ní ojúṣe láti rí i pé ààyè náà wà ní ààbò, ó ṣeé wọ̀, ó sì tún wà ní ipò rere.",
+        "compliance": "Ìtẹ̀lé òfin: O gbà láti tẹ̀lé gbogbo àwọn òfin àti ìlànà ìbílẹ̀ nípa ìgbọ́kọ̀sí àti iṣẹ́ ajé.",
+        "fees": "Owó Ìkànnì: O gbà sí ètò owó ìpín ìkànnì náà lórí gbogbo ìfowópamọ́ tí a ṣe nípasẹ̀ Space Park.",
+        "termination": "Ìfopin sí i: Space Park ní ẹ̀tọ́ láti dá iṣẹ́ dúró tàbí láti yọ ààyè eyìkéyìí tí ó bá tàpá sí àwọn òfin wọ̀nyí."
+      }
+    }
+  },
+  "locate": {
+    "title": "Wá Mi Kàn",
+    "here": "O wà níbí",
+    "error": "A kò gba ààyè láti mọ ibi tí o wà tàbí kò sí."
+  },
+  "addZone": {
+    "title": "Fi Agbègbè Tuntun Kún Un",
+    "sub": "Fi ìbéèrè sílẹ̀ láti fi ibi ìgbọ́kọ̀sí mìíràn kún abẹ́ àkàǹtì rẹ.",
+    "subtitle": "Fi ìbéèrè sílẹ̀ láti fi ibi ìgbọ́kọ̀sí mìíràn kún abẹ́ àkàǹtì rẹ.",
+    "successTitle": "A ti Fi Ìbéèrè Ránṣẹ́!",
+    "successMsg": "Àṣeyọrí! A ti gba ìwé rẹ ({{id}}), àti pé a ń ṣàyẹ̀wò rẹ̀ lọ́wọ́.",
+    "returnBtn": "Padà sí Dashboard",
+    "form": {
+      "name": "Orúkọ Agbègbè náà",
+      "namePlaceholder": "bíi: Westlands Branch",
+      "address": "Àdírẹ́sì Ibi tó wà",
+      "addressPlaceholder": "Orúkọ Ojú-ọ̀nà, Agbègbè",
+      "slots": "Iye Ààyè tó wà",
+      "slotsPlaceholder": "Iye ààyè",
+      "rate": "Owó fún Wákàtí Kan Tí A Dábàá (KES/GHS)",
+      "ratePlaceholder": "bí àpẹẹrẹ. 150.00",
+      "hours": "Àkókò Iṣẹ́",
+      "hoursPlaceholder": "bí àpẹẹrẹ. 24/7 tàbí 8AM - 6PM",
+      "map": "Fi Àmì Ibi Tí Ó Wà Sí Orí Máàpù",
+      "mapSub": "Tẹ ibikíbi lórí map láti sọ ibi tí agbègbè rẹ wà gan-an.",
+      "mapLocation": {
+        "label": "Sọ Ibi Tí Ó Wà lórí Map",
+        "instruction": "Tẹ ibikíbi lórí map láti sọ ibi tí agbègbè rẹ wà gan-an."
+      },
+      "parkingSurface": {
+        "label": "Ilẹ̀ Ibi Ìgbọ́kọ̀sí"
+      },
+      "surface": "Ilẹ̀ Ibi Ìgbọ́kọ̀sí",
+      "security": "Ààbò níbẹ̀",
+      "cctv": "Kámẹ́rà ààbò (CCTV)",
+      "submit": "Fi Ìbéèrè Agbègbè Sílẹ̀"
+    },
+    "nav": {
+      "submitting": "À n fi ìbéèrè sílẹ̀...",
+      "submit": "Fi Ìbéèrè Agbègbè Sílẹ̀"
+    },
+    "errorMsg": "Ìfisílẹ̀ kùnà. Jọ̀wọ́ yẹ àwọn ìsọfúnni rẹ wò."
+  },
+  "login": {
+    "title": "Ojú-ewé Alábàáṣiṣẹ́",
+    "subtitle": "Wọlé láti ṣàkóso agbègbè ìgbọ́kọ̀sí rẹ",
+    "email": "Àdírẹ́sì Email",
+    "password": "Ọ̀rọ̀-ìsecret",
+    "signin": "Wọlé",
+    "signingIn": "À ń wọlé...",
+    "noAccount": "Ṣé o kò ní àkánǹtì?",
+    "applyLink": "Di alábàáṣiṣẹ́",
+    "statusLink": "Ṣayẹwo ipò ìwé rẹ",
+    "error": "Ìwọlé kò yọrí sí rere. Jọ̀wọ́ ṣayẹwo email àti ọ̀rọ̀-ìsecret rẹ."
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "addZone": "Fi Agbègbè Kún un",
+    "bankDetails": "Kúlẹ̀kúlẹ̀ Banki",
+    "changePassword": "Ṣàtúnṣe Ọ̀rọ̀-ìsecret",
+    "darkMode": "Ìmọ́lẹ̀ Òkùnkùn",
+    "lightMode": "Ìmọ́lẹ̀ Ayé",
+    "signOut": "Jáde",
+    "role": "Olówó",
+    "owner": "Olówó"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Káàbọ̀ padà! Wo bí ààyè rẹ ṣe ń ṣiṣẹ́.",
+    "loading": "À ń ṣètò dashboard rẹ...",
+    "error": "Dashboard kò ṣí. Jọ̀wọ́ tún dán an wò.",
+    "stats": {
+      "totalEarnings": "Gbogbo Owó",
+      "thisMonth": "Oṣù Yìí",
+      "today": "Òní",
+      "activeSessions": "Ìgbọ́kọ̀sí lọ́wọ́",
+      "zones": "Agbègbè",
+      "allTime": "Látayébáyé",
+      "currentMonth": "Oṣù yìí",
+      "todaySub": "Owó òní",
+      "activeSub": "{{count}} lọ́wọ́",
+      "zonesSub": "Agbègbè tó ń ṣiṣẹ́"
+    },
+    "charts": {
+      "earningsTitle": "Owó — Ọjọ́ 30 sẹ́yìn",
+      "noData": "Kò sí owó kankan tó o ti pa. Owó yóò hàn níbí tí wọ́n bá ti gbé ọkọ̀ kúrò.",
+      "revenueSplit": "Pínpín Owó nípa Agbègbè"
+    },
+    "table": {
+      "zonesTitle": "Àwọn Agbègbè rẹ",
+      "colZone": "Agbègbè",
+      "colSlots": "Ààyè",
+      "colRate": "Owó Wákàtí",
+      "colActive": "Ìgbọ́kọ̀sí lọ́wọ́",
+      "colOccupancy": "Ìlò",
+      "colCommission": "Ìdáwó",
+      "sessionsTitle": "Àwọn Ìgbọ́kọ̀sí Lẹ́nu Àìpẹ́",
+      "colVehicle": "Ọkọ̀",
+      "colStart": "Àkókò Ìbẹ̀rẹ̀",
+      "colStatus": "Ipò",
+      "colAmount": "Iye Owó",
+      "noSessions": "Kò sí ìgbọ́kọ̀sí kankan. Wọn yóò hàn níbí tí àwọn awakọ̀ bá bẹ̀rẹ̀ sí í gbé ọkọ̀ síbẹ̀."
+    }
+  },
+  "success": {
+    "title": "A ti Gba Ìwé rẹ!",
+    "subtitle": "Ìwé rẹ ti dé ọ̀dọ̀ wa. Ẹgbẹ́ wa yóò ṣàyẹ̀wò rẹ̀ láàárín ọjọ́ iṣẹ́ 2-5, a ó fèsì sí ẹ rẹ email.",
+    "appIdLabel": "ID Ìwé Rẹ",
+    "copyId": "Dà á kọ",
+    "copied": "A ti dà á kọ!",
+    "saveIdTip": "Tọ́jú ID yìí — o nílò rẹ̀ láti ṣayẹwo ipò ìwé rẹ",
+    "checkStatus": "Ṣayẹwo Ipò",
+    "backHome": "Padà sí Ilé"
+  },
+  "status": {
+    "title": "Ṣayẹwo Ipò Ìwé rẹ",
+    "subtitle": "Tẹ ID rẹ síbí láti rí ipò tí ìwé rẹ wà gan-an",
+    "label": "ID Ìwé Rẹ",
+    "placeholder": "bíi: a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "checking": "À ń ṣàyẹ̀wò...",
+    "checkBtn": "Ṣayẹwo Ipò",
+    "error": {
+      "empty": "Jọ̀wọ́ kọ ID rẹ sílẹ̀.",
+      "notFound": "A kò rí ìwé kankan pẹ̀lú ID yìí. Jọ̀wọ́ ṣayẹwo kí o sì tún dán an wò.",
+      "generic": "Nǹkan kan ṣẹlẹ̀. Jọ̀wọ́ tún dán an wò."
+    },
+    "states": {
+      "pending": {
+        "label": "À ń ṣàyẹ̀wò",
+        "msg": "Ẹgbẹ́ wa ń ṣàyẹ̀wò ìwé rẹ. Èyí máa ń gba ọjọ́ iṣẹ́ 2-5."
+      },
+      "approved": {
+        "label": "A ti fọwọ́ sí i",
+        "msg": "Kú oríire! A ti fọwọ́ sí agbègbè rẹ. Ṣayẹwo email rẹ fún ọ̀nà ìwọlé rẹ."
+      },
+      "rejected": {
+        "label": "A kò fọwọ́ sí i",
+        "msg": "Ó dunni pé a kò le fọwọ́ sí i ní báyìí. Jọ̀wọ́ wo àkọsílẹ̀ tàbí kí o kàn sí aláyẹ̀wò."
+      }
+    },
+    "notes": "Àkọsílẹ̀ Admin:",
+    "submittedOn": "Ọjọ́ tí o fi ránsẹ́: {{date}}",
+    "loginBtn": "→ Wọlé sí Dashboard rẹ"
+  },
+  "bank": {
+    "title": "Kúlẹ̀kúlẹ̀ Banki",
+    "subtitle": "Ṣètò àkánǹtì rẹ láti gba owó",
+    "info": "Àwọn ìsọfúnni yìí pamọ́, a ó sì lò ó nìkan láti san owó rẹ sí rẹ àkánǹtì.",
+    "bankName": "Orúkọ Banki",
+    "bankNamePlaceholder": "bíi: KCB Bank, Equity Bank",
+    "accountNumber": "Nọ́mbà Àkánǹtì",
+    "accountNumberPlaceholder": "Nọ́mbà àkánǹtì banki rẹ",
+    "accountHolder": "Orúkọ Olówó Àkánǹtì",
+    "accountHolderPlaceholder": "Orúkọ gẹ́gẹ́ bí ó ṣe wà nínú banki",
+    "saveBtn": "Fi pamọ́",
+    "saving": "À ń fi pamọ́...",
+    "error": {
+      "required": "Dandan ni láti kọ gbogbo rẹ̀ sílẹ̀.",
+      "generic": "Ìfipamọ́ kò yọrí sí rere."
+    },
+    "success": "A ti fi kúlẹ̀kúlẹ̀ banki rẹ pamọ́ lọ́nà tó dára."
+  },
+  "password": {
+    "title": "Ṣàtúnṣe Ọ̀rọ̀-ìsecret",
+    "subtitle": "Ṣàtúnṣe ọ̀rọ̀-ìsecret rẹ láti dáàbò bo àkánǹtì rẹ",
+    "current": "Ọ̀rọ̀-ìsecret lọ́wọ́",
+    "currentPlaceholder": "Ọ̀rọ̀-ìsecret rẹ lọ́wọ́",
+    "new": "Ọ̀rọ̀-ìsecret tuntun",
+    "newPlaceholder": "Aƙalla haruffa 8",
+    "confirm": "Tebattar da Ọ̀rọ̀-ìsecret tuntun",
+    "confirmPlaceholder": "Tún ọ̀rọ̀-ìsecret tuntun kọ",
+    "updateBtn": "Ṣàtúnṣe",
+    "updating": "À ń ṣàtúnṣe...",
+    "tip": "Lẹ́yìn tí o bá ṣàtúnṣe ọ̀rọ̀-ìsecret rẹ, o nílò láti tún wọlé lórí gbogbo ẹ̀rọ rẹ.",
+    "error": {
+      "mismatch": "Ọ̀rọ̀-ìsecret tuntun ò rẹ́nà.",
+      "length": "Ọ̀rọ̀-ìsecret rẹ gbọ́dọ̀ ju haruffa 8 lọ.",
+      "generic": "Àtúnṣe ọ̀rọ̀-ìsecret kò yọrí sí rere."
+    }
+  },
+  "howItWorks": {
+    "title": "Bí Space Park Ṣe Ń Ṣiṣẹ́",
+    "subtitle": "Space Park ń sọ àwọn olówó ibi ìgbọ́kọ̀sí pọ̀ mọ́ àwọn awakọ̀. Wo bí ó ṣe ń ṣiṣẹ́ láti ìbẹ̀rẹ̀ dé ìgbà tí o máa gba owó àkọ́kọ́.",
+    "programme": "Ìlànà Alábàáṣiṣẹ́",
+    "steps": {
+      "1": {
+        "title": "Fi Ìwé rẹ Ránṣẹ́",
+        "desc": "Kọ gbogbo rẹ̀ sílẹ̀ nínú fọ́ọ̀mù kúrú yìí — orúkọ, àdírẹ́sì, iye ààyè, àti owó tí o fẹ́ gba. Sọ ibi tí ó wà lórí map. Kò ju ìṣẹ́jú 5 lọ."
+      },
+      "2": {
+        "title": "Àyẹ̀wò Ìwé rẹ",
+        "desc": "Ẹgbẹ́ wa yóò ṣàyẹ̀wò ìwé rẹ láàárín ọjọ́ iṣẹ́ 2-5. A lè kàn sí ẹ láti jẹ́rìí sí ìní rẹ. O lè ṣayẹwo ipò rẹ pẹ̀lú ID rẹ."
+      },
+      "3": {
+        "title": "Ìfọwọ́sí & Ìbẹ̀rẹ̀ Iṣẹ́",
+        "desc": "Ní kété tí a bá fọwọ́ sí i, agbègbè rẹ yóò bẹ̀rẹ̀ iṣẹ́, àwọn awakọ̀ yóò sì máa rí i lórí app. O ó gba email fún ìwọlé rẹ."
+      },
+      "4": {
+        "title": "Ṣètò Àkánǹtì Ìsanwó",
+        "desc": "Nígbà àkọ́kọ́ tí o bá wọlé, kọ kúlẹ̀kúlẹ̀ banki rẹ sílẹ̀. Níbẹ̀ ni a ó ti máa san owó rẹ sí fúnra rẹ̀."
+      },
+      "5": {
+        "title": "Bojútó Owó Rẹ",
+        "desc": "Lo Dashboard rẹ láti rí bí wọ́n ṣe ń gbé ọkọ̀ síbẹ̀, ìtàn ìgbọ́kọ̀sí, owó rẹ, àti iṣẹ́ rẹ pẹ̀lú àwòrán tó dára."
+      },
+      "6": {
+        "title": "Gba Owó Rẹ",
+        "desc": "A ó máa ṣirò owó rẹ fúnra rẹ̀, a ó yọ ìdáwó wa kúrò, a ó sì san owó tó kù sí rẹ àkánǹtì banki."
+      }
+    },
+    "faq": {
+      "title": "Ìbéèrè Tó Wọ́pọ̀",
+      "q1": "Nàwó ni Space Park ń gbà?",
+      "a1": "Space Park ń gba 10% nìkan lórí kọ̀ọ̀kan ìgbọ́kọ̀sí. Ìwọ yóò gba 90% gbogbo owó náà. O lè rí iye náà nínú dashboard rẹ.",
+      "q2": "Ìgbà wo ni n ó gba owó mi?",
+      "a2": "A ń san owó sí àkánǹtì banki rẹ nígbà gbogbo — láàárín ọjọ́ iṣẹ́ 3-5 lẹ́yìn tí ìgbọ́kọ̀sí bá parí.",
+      "q3": "Ṣé n ó lè sọ iye owó tí n ó máa gbà?",
+      "a3": "Bẹ́ẹ̀ ni! O lè sọ iye owó tí o fẹ́ nígbà tí o bá ń forúkọsílẹ̀. Lẹ́yìn náà, o lè kàn sí aláyẹ̀wò láti yí i padà.",
+      "q4": "Tí awakọ̀ bá ba ààyè mi jẹ́ ń kọ́?",
+      "a4": "Gbogbo ìgbọ́kọ̀sí ni a ní àkọsílẹ̀ rẹ̀. Ẹgbẹ́ wa yóò ràn ẹ́ lọ́wọ́ láti yanjú eyikeyi ìṣòro.",
+      "q5": "Báwo ni app náà ṣe ń ṣiṣẹ́?",
+      "a5": "Àwọn awakọ̀ rí agbègbè rẹ lórí map, wọ́n ń ṣayẹwo ààyè tó wà, wọ́n sì ń sanwó látorí ẹ̀rọ — láìlo owó gidi.",
+      "q6": "Ṣé n ó lè dáná mọ́ iṣẹ́ fún ìgbà díẹ̀?",
+      "a6": "Bẹ́ẹ̀ ni — kàn sí aláyẹ̀wò tàbí kí o fi email ránṣẹ́ sí support@spacepark.com láti dáná mọ́ iṣẹ́ náà fún ìgbà díẹ̀ láìsọ àkánǹtì rẹ nù."
+    },
+    "applyBtn": "Di Alábàáṣiṣẹ́"
+  },
+  "common": {
+    "optional": "(bí o bá fẹ́)",
+    "mandatory": "(DANDAN)",
+    "step": "Ìgbésẹ̀"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Ilana Ipamọ",
+      "date": "Ọjọ́ tí ó bẹ̀rẹ̀: February 9, 2026 · Àtúnṣe: February 9, 2026",
+      "s1": {
+        "title": "1. Ìfihàn",
+        "content": "A ti pinnu láti dáàbò bo ìpamọ́ rẹ àti láti rí i pé àwọn ìsọfúnni rẹ wà ní ìpamọ́. Ìlànà yìí ṣàlàyé bí a ṣe ń kó, a sì ń lò ó."
+      },
+      "s2": {
+        "title": "2. Àwọn Ìsọfúnni tí A Ń Kó",
+        "item1": "Nọ́mbà fóònù – fún ìwọlé",
+        "item2": "Orúkọ – fún idanimọ àkánǹtì",
+        "item3": "Email – fún ìfitónilétí",
+        "item4": "Ibi Agbègbè rẹ – àdírẹ́sì àti m mizan m",
+        "item5": "Kúlẹ̀kúlẹ̀ banki – fún ìsanwó",
+        "item6": "Ìwé – ẹ̀rí ìní rẹ",
+        "item7": "Ìlò – ìgbọ́kọ̀sí, owó, àti iṣẹ́"
+      },
+      "s3": {
+        "title": "3. Bí A Ṣe Ń Lo Ìsọfúnni Rẹ",
+        "item1": "Ṣètò àkánǹtì alábàáṣiṣẹ́ rẹ",
+        "item2": "Ṣirò owó rẹ lẹ́sẹ̀kẹsẹ̀",
+        "item3": "San owó sí àkánǹtì rẹ",
+        "item4": "Fi ìfitónilétí ránṣẹ́",
+        "item5": "Pèsè ìrànlọ́wọ́",
+        "item6": "Mú iṣẹ́ wa sunwọ̀n",
+        "item7": "Tẹ̀lé òfin ìlú"
+      },
+      "s4": {
+        "title": "4. Pínpín Ìsọfúnni",
+        "content": "A kò ní ta ìsọfúnni rẹ. A lè pín in pẹ̀lú àwọn tó ń ràn wá lọ́wọ́ (ìsanwó) tàbí òfin tí ó bá pọn dandan."
+      },
+      "s5": {
+        "title": "5. Ààbò",
+        "item1": "Ìlò SSL/TLS",
+        "item2": "Ìfipamọ́ lórí ẹ̀rọ tó dájú",
+        "item3": "A kì í jẹ́ kí gbogbo òṣìṣẹ́ rí i",
+        "item4": "Àyẹ̀wò ààbò nígbà gbogbo"
+      },
+      "s6": {
+        "title": "6. Àwọn Ẹ̀tọ́ Rẹ",
+        "item1": "Rí àwọn ìsọfúnni rẹ",
+        "item2": "Ṣàtúnṣe ohun tí ò tọ́",
+        "item3": "Ní kí a pa àkánǹtì rẹ rẹ́",
+        "item4": "Jáde kúrò nínú ìfitónilétí",
+        "item5": "Gba gbogbo ìsọfúnni rẹ jáde"
+      },
+      "s7": {
+        "title": "7. Ìpamọ́ Àwọn Ọmọdé",
+        "content": "Iṣẹ́ wa kì í ṣe fún àwọn ọmọdé tí kò tíì pé ọmọ ọdún 13."
+      },
+      "s8": {
+        "title": "8. Kàn sí Wa",
+        "emailLabel": "Email",
+        "phoneLabel": "Fóònù"
+      },
+      "consent": "Nípa lílo Space Park, o ti fara mọ́ ìlànà ìpamọ́ yìí."
+    },
+    "terms": {
+      "title": "Àdéhùn Iṣẹ́",
+      "date": "Ọjọ́ tí ó bẹ̀rẹ̀: February 9, 2026",
+      "s1": {
+        "title": "1. Ìfara-mọ́",
+        "content": "Nípa lílo Space Park, o kùnrẹ̀n mọ́ àwọn àdéhùn yìí."
+      },
+      "s2": {
+        "title": "2. Ẹ̀tọ́ àti Nauyi",
+        "item1": "O gbọ́dọ̀ pé ọmọ ọdún 18.",
+        "item2": "Ìsọfúnni tí o kọ gbọ́dọ̀ tọ́.",
+        "item3": "Tẹ̀lé òfin ìní ilẹ̀ ti ìlú rẹ.",
+        "item4": "O kùn mọ́ ohun tó ń ṣẹlẹ̀ nínú àkánǹtì rẹ."
+      },
+      "s3": {
+        "title": "3. Ààbò Àkánǹtì",
+        "item1": "Dáàbò bo ọ̀rọ̀-ìsecret rẹ.",
+        "item2": "A lè dáná mọ́ àkánǹtì tó bá lura.",
+        "item3": "Sọ fún wa tí ẹlòmíràn bá lo àkánǹtì rẹ."
+      },
+      "s4": {
+        "title": "4. Iṣẹ́ Alábàáṣiṣẹ́",
+        "content": "Space Park pèsè ojú-ewé láti forúkọ ààyè rẹ sílẹ̀ lórí ẹ̀rọ."
+      },
+      "s5": {
+        "title": "5. Àdéhùn Owó",
+        "item1": "Owó kan náà pẹ̀lú orí-ẹrù.",
+        "item2": "Owó rẹ yóò jẹ́ lẹ́yìn tí a bá yọ ìdáwó wa.",
+        "item3": "Owó yóò lọ sí rẹ àkánǹtì banki.",
+        "item4": "Ẹ̀sùn owó gbọ́dọ̀ wáyé láàárín ọjọ́ 7."
+      },
+      "s6": {
+        "title": "6. Ìpamọ́",
+        "content": "Ìlò ìsọfúnni rẹ tẹ̀lé Ìlànà Ìpamọ́ wa."
+      },
+      "s7": {
+        "title": "7. Riru Òfin",
+        "content": "Lílo iṣẹ́ yìí lọ́nà tí kò tọ́ le fa dídáná mọ́ iṣẹ́ rẹ."
+      },
+      "s8": {
+        "title": "8. Ohun Ìní wa",
+        "content": "Gbogbo ohun tó wà níbí jẹ́ ti Space Park Ltd."
+      },
+      "s9": {
+        "title": "9. Yanju Ìṣòro",
+        "content": "A ó máa dán a wò láti yanjú ìṣòro ní àlàáfíà."
+      },
+      "s10": {
+        "title": "10. Ìkìlọ̀",
+        "content": "Iṣẹ́ yìí jẹ́ \"gẹ́gẹ́ bí ó ṣe wà\"."
+      },
+      "agreement": "NÍPA LÍLO SPACE PARK, O TI KÀ Á, O SÌ TI FARA MỌ́ GBOGBO ÀDÉHÙN YÌÍ.",
+      "compliance": "Tẹ̀lé ìlànà Google Play àti Apple App Store."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "sw": "Kiswahili",
+    "fr": "Français",
+    "ar": "العربية",
+    "pt": "Português",
+    "am": "አማርኛ",
+    "ha": "Hausa",
+    "yo": "Yorùbá",
+    "zu": "isiZulu",
+    "es": "Español",
+    "de": "Deutsch"
+  }
+}
