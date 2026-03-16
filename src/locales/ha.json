@@ -285,6 +285,12 @@
       "colStart": "Lokacin Fara",
       "colStatus": "Matsayi",
       "colAmount": "Adadi",
+      "status": {
+        "active": "Yana Aiki",
+        "completed": "An Gama",
+        "pending": "Ana Jira",
+        "cancelled": "An Soke"
+      },
       "noSessions": "Babu zama tukunna. Za su bayyana nan da direbobi suka fara parking."
     }
   },

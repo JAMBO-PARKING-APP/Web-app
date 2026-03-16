@@ -284,6 +284,12 @@
       "colStart": "Inicio",
       "colStatus": "Estado",
       "colAmount": "Importe",
+      "status": {
+        "active": "Activa",
+        "completed": "Completada",
+        "pending": "Pendiente",
+        "cancelled": "Cancelada"
+      },
       "noSessions": "Aún no hay sesiones. Aparecerán cuando los conductores empiecen a aparcar."
     }
   },

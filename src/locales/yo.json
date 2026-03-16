@@ -293,6 +293,12 @@
       "colStart": "Àkókò Ìbẹ̀rẹ̀",
       "colStatus": "Ipò",
       "colAmount": "Iye Owó",
+      "status": {
+        "active": "Lọ́wọ́",
+        "completed": "Parí",
+        "pending": "Ń dúró",
+        "cancelled": "Pa rẹ́"
+      },
       "noSessions": "Kò sí ìgbọ́kọ̀sí kankan. Wọn yóò hàn níbí tí àwọn awakọ̀ bá bẹ̀rẹ̀ sí í gbé ọkọ̀ síbẹ̀."
     }
   },

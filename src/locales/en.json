@@ -296,8 +296,14 @@
       "sessionsTitle": "Recent Sessions",
       "colVehicle": "Vehicle",
       "colStart": "Start Time",
-      "colStatus": "Status"      ,
+      "colStatus": "Status",
       "colAmount": "Amount",
+      "status": {
+        "active": "Active",
+        "completed": "Completed",
+        "pending": "Pending",
+        "cancelled": "Cancelled"
+      },
       "noSessions": "No sessions yet. Sessions will appear here once drivers start parking."
     }
   },

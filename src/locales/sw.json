@@ -284,6 +284,12 @@
       "colStart": "Muda wa Kuanza",
       "colStatus": "Hali",
       "colAmount": "Kiasi",
+      "status": {
+        "active": "Inafanya kazi",
+        "completed": "Imekamilika",
+        "pending": "Inasubiri",
+        "cancelled": "Imeghairiwa"
+      },
       "noSessions": "Bado hakuna vipindi. Vipindi vitaonekana hapa madereva watapoanza kupaki."
     }
   },

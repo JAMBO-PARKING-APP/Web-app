@@ -285,6 +285,12 @@
       "colStart": "Startzeitpunkt",
       "colStatus": "Status",
       "colAmount": "Betrag",
+      "status": {
+        "active": "Aktiv",
+        "completed": "Abgeschlossen",
+        "pending": "Ausstehend",
+        "cancelled": "Storniert"
+      },
       "noSessions": "Noch keine Sitzungen vorhanden. Sie erscheinen hier, sobald Fahrer parken."
     }
   },

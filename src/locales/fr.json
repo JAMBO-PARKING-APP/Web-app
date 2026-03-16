@@ -284,6 +284,12 @@
       "colStart": "Heure de Début",
       "colStatus": "Statut",
       "colAmount": "Montant",
+      "status": {
+        "active": "Active",
+        "completed": "Terminée",
+        "pending": "En attente",
+        "cancelled": "Annulée"
+      },
       "noSessions": "Pas encore de sessions. Elles apparaîtront ici quand les conducteurs commenceront à se garer."
     }
   },

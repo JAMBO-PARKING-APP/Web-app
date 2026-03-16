@@ -285,6 +285,12 @@
       "colStart": "Início",
       "colStatus": "Status",
       "colAmount": "Valor",
+      "status": {
+        "active": "Ativa",
+        "completed": "Concluída",
+        "pending": "Pendente",
+        "cancelled": "Cancelada"
+      },
       "noSessions": "Ainda não há sessões. Elas aparecerão aqui quando motoristas estacionarem."
     }
   },

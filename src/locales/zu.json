@@ -293,6 +293,12 @@
       "colStart": "Isikhathi Sokuqala",
       "colStatus": "Isimo",
       "colAmount": "Inani",
+      "status": {
+        "active": "Iyasebenza",
+        "completed": "Iqedile",
+        "pending": "Isalindile",
+        "cancelled": "Ikhanseliwe"
+      },
       "noSessions": "Awekho amaseshini okwamanje. Azovela lapha uma abashayeli beqala ukupaka."
     }
   },

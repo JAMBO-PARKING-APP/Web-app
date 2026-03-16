@@ -29,7 +29,7 @@ const CustomTooltip = ({ active, payload, label, t }) => {
       <div style={{ background: '#1e1e3a', border: '1px solid var(--border)', borderRadius: 10, padding: '10px 16px' }}>
         <p style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 4 }}>{label}</p>
         <p style={{ color: 'var(--accent-light)', fontWeight: 700, fontSize: 16 }}>
-          {Number(payload[0].value).toLocaleString()}
+          {Number(payload[0].value).toLocaleString(i18n.language)}
         </p>
       </div>
     );
@@ -50,7 +50,7 @@ export default function DashboardPage() {
       .finally(() => setLoading(false));
   }, [t]);
 
-  const fmt = (n) => Number(n || 0).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  const fmt = (n) => Number(n || 0).toLocaleString(i18n.language, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
   return (
     <div className="dashboard-layout">
@@ -96,7 +96,7 @@ export default function DashboardPage() {
                         <XAxis dataKey="date" tick={{ fill: '#475569', fontSize: 11 }} tickLine={false} axisLine={false}
                           tickFormatter={d => new Date(d).toLocaleDateString(i18n.language, { day: 'numeric', month: 'short' })} />
                         <YAxis tick={{ fill: '#475569', fontSize: 11 }} tickLine={false} axisLine={false}
-                          tickFormatter={v => v.toLocaleString()} />
+                          tickFormatter={v => v.toLocaleString(i18n.language)} />
                         <Tooltip content={<CustomTooltip t={t} />} cursor={{ stroke: 'rgba(99,102,241,0.3)', strokeWidth: 1 }} />
                         <Area type="monotone" dataKey="amount" stroke="#6366f1" strokeWidth={2.5}
                           fill="url(#earningsGrad)" dot={false} activeDot={{ r: 5, fill: '#818cf8' }} />
@@ -194,7 +194,7 @@ export default function DashboardPage() {
                             </td>
                             <td>
                               <span className={`badge ${s.status === 'active' ? 'badge-active' : s.status === 'completed' ? 'badge-approved' : 'badge-pending'}`}>
-                                {s.status}
+                                {t(`dashboard.table.status.${s.status}`)}
                               </span>
                             </td>
                             <td style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{fmt(s.final_cost)}</td>

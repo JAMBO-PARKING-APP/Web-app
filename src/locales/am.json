@@ -284,7 +284,13 @@
       "colStart": "የጀመረበት ሰዓት",
       "colStatus": "ሁኔታ",
       "colAmount": "መጠን",
-      "noSessions": "እስካሁን ምንም ክፍለ-ጊዜ የለም:: አሽከርካሪዎች መጠቀም ሲጀምሩ እዚህ ይታያሉ::"
+      "status": {
+        "active": "ንቁ",
+        "completed": "ተጠናቋል",
+        "pending": "በመጠባበቅ ላይ",
+        "cancelled": "ተሰርዟል"
+      },
+      "noSessions": "እስካሁን ምንም ክፍለ-ጊዜ የለም:: አሽከርkaሪዎች መጠቀም ሲጀምሩ እዚህ ይታያሉ::"
     }
   },
   "success": {
