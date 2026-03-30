@@ -5,9 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { api } from '../AuthContext';
 import { AlertTriangle, CheckCircle2 } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-import Navbar from '../components/Navbar';
-import LocateControl from '../components/LocateControl';
 
 // Fix default marker icon
 delete L.Icon.Default.prototype._getIconUrl;
@@ -17,6 +14,8 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
+const STEPS = ['Personal Info', 'Zone Details', 'Pin Location', 'Documents & Submit'];
+
 function MapPicker({ onLocationSelect, selectedPos }) {
   useMapEvents({
     click(e) { onLocationSelect(e.latlng); }
@@ -25,28 +24,19 @@ function MapPicker({ onLocationSelect, selectedPos }) {
 }
 
 export default function ApplyPage() {
-  const { t } = useTranslation();
   const navigate = useNavigate();
   const [step, setStep] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [selectedPos, setSelectedPos] = useState(null);
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
   const fileRef = useRef();
-
-  const STEPS = [
-    t('apply.steps.personal'),
-    t('apply.steps.zone'),
-    t('apply.steps.pin'),
-    t('apply.steps.submit')
-  ];
 
   const [form, setForm] = useState({
     applicant_name: '', applicant_email: '', applicant_phone: '',
     proposed_name: '', address: '', total_slots: 1, proposed_hourly_rate: '',
     operating_hours: '24/7', parking_surface: 'paved',
     has_security: false, has_cctv: false, access_instructions: '',
-    latitude: '', longitude: '', documents: null,
+    latitude: '', longitude: '', documents: null, zone_picture: null,
   });
 
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
@@ -55,17 +45,17 @@ export default function ApplyPage() {
     setError('');
     if (step === 0) {
       if (!form.applicant_name || !form.applicant_email || !form.applicant_phone) {
-        setError(t('apply.error.personal')); return;
+        setError('Please fill in all personal details.'); return;
       }
     }
     if (step === 1) {
       if (!form.proposed_name || !form.address || !form.proposed_hourly_rate) {
-        setError(t('apply.error.zone')); return;
+        setError('Please fill in all zone details.'); return;
       }
     }
     if (step === 2) {
       if (!form.latitude || !form.longitude) {
-        setError(t('apply.error.pin')); return;
+        setError('Please click on the map to pin your zone location.'); return;
       }
     }
     setStep(s => s + 1);
@@ -73,24 +63,13 @@ export default function ApplyPage() {
 
   const handleSubmit = async () => {
     setLoading(true); setError('');
-    
-    // Check if document is uploaded
-    if (!form.documents) {
-      setError(t('apply.error.upload'));
-      setLoading(false);
-      return;
-    }
-
     try {
       const fd = new FormData();
       Object.entries(form).forEach(([k, v]) => {
-        if (k === 'documents') { if (v) fd.append(k, v); }
+        if (k === 'documents' || k === 'zone_picture') { if (v) fd.append(k, v); }
         else fd.append(k, v);
       });
-      // Add acceptance timestamp or boolean if backend requires
-      fd.append('accepted_terms', acceptedTerms);
-      
-      const res = await api.post('apply/', fd, {
+      const res = await api.post('/apply/', fd, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       navigate('/apply/success', { state: { applicationId: res.data.application_id } });
@@ -99,20 +78,26 @@ export default function ApplyPage() {
       if (typeof msg === 'object') {
         setError(Object.values(msg).flat().join(', '));
       } else {
-        setError(t('apply.error.generic'));
+        setError('Submission failed. Please try again.');
       }
     } finally { setLoading(false); }
   };
 
   return (
     <>
-      <Navbar showLinks={false} backLink={true} />
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo">
+          <img src="/logo.png" alt="Space Park" style={{ height: 36, objectFit: 'contain' }} />
+          <span>Space Park</span>
+        </Link>
+        <Link to="/" className="btn-secondary" style={{ padding: '8px 20px', fontSize: 13 }}>← Back to Home</Link>
+      </nav>
 
       <div className="apply-page">
         <div className="apply-container">
           <div className="apply-header">
-            <h1>{t('apply.title')}</h1>
-            <p>{t('apply.subtitle')}</p>
+            <h1>Apply to List Your Space</h1>
+            <p>Complete the form below to get your parking zone on Jambo Parking</p>
           </div>
 
           {/* Stepper */}
@@ -134,18 +119,18 @@ export default function ApplyPage() {
             {/* Step 0 */}
             {step === 0 && (
               <div className="animate-in">
-                <h2 style={{ marginBottom: 24, fontSize: 22, fontWeight: 700 }}>{t('apply.personal.title')}</h2>
+                <h2 style={{ marginBottom: 24, fontSize: 22, fontWeight: 700 }}>Your Personal Details</h2>
                 <div className="form-group">
-                  <label>{t('apply.personal.name')}</label>
-                  <input className="form-input" placeholder={t('apply.personal.namePlaceholder')} value={form.applicant_name} onChange={e => set('applicant_name', e.target.value)} />
+                  <label>Full Name</label>
+                  <input className="form-input" placeholder="John Kamau" value={form.applicant_name} onChange={e => set('applicant_name', e.target.value)} />
                 </div>
                 <div className="form-group">
-                  <label>{t('apply.personal.email')}</label>
-                  <input className="form-input" type="email" placeholder={t('apply.personal.emailPlaceholder')} value={form.applicant_email} onChange={e => set('applicant_email', e.target.value)} />
+                  <label>Email Address</label>
+                  <input className="form-input" type="email" placeholder="john@example.com" value={form.applicant_email} onChange={e => set('applicant_email', e.target.value)} />
                 </div>
                 <div className="form-group">
-                  <label>{t('apply.personal.phone')}</label>
-                  <input className="form-input" placeholder={t('apply.personal.phonePlaceholder')} value={form.applicant_phone} onChange={e => set('applicant_phone', e.target.value)} />
+                  <label>Phone Number</label>
+                  <input className="form-input" placeholder="+254712345678" value={form.applicant_phone} onChange={e => set('applicant_phone', e.target.value)} />
                 </div>
               </div>
             )}
@@ -153,50 +138,50 @@ export default function ApplyPage() {
             {/* Step 1 */}
             {step === 1 && (
               <div className="animate-in">
-                <h2 style={{ marginBottom: 24, fontSize: 22, fontWeight: 700 }}>{t('apply.zone.title')}</h2>
+                <h2 style={{ marginBottom: 24, fontSize: 22, fontWeight: 700 }}>Zone Details</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 20px' }}>
                   <div className="form-group">
-                    <label>{t('apply.zone.name')}</label>
-                    <input className="form-input" placeholder={t('apply.zone.namePlaceholder')} value={form.proposed_name} onChange={e => set('proposed_name', e.target.value)} />
+                    <label>Proposed Zone Name</label>
+                    <input className="form-input" placeholder="Central Nairobi Parking" value={form.proposed_name} onChange={e => set('proposed_name', e.target.value)} />
                   </div>
                   <div className="form-group">
-                    <label>{t('apply.zone.address')}</label>
-                    <input className="form-input" placeholder={t('apply.zone.addressPlaceholder')} value={form.address} onChange={e => set('address', e.target.value)} />
+                    <label>Address</label>
+                    <input className="form-input" placeholder="Kenyatta Ave, Nairobi" value={form.address} onChange={e => set('address', e.target.value)} />
                   </div>
                   <div className="form-group">
-                    <label>{t('apply.zone.slots')}</label>
+                    <label>Total Parking Slots</label>
                     <input className="form-input" type="number" min={1} value={form.total_slots} onChange={e => set('total_slots', parseInt(e.target.value) || 1)} />
                   </div>
                   <div className="form-group">
-                    <label>{t('apply.zone.rate')}</label>
-                    <input className="form-input" type="number" min={0} placeholder={t('apply.zone.ratePlaceholder')} value={form.proposed_hourly_rate} onChange={e => set('proposed_hourly_rate', e.target.value)} />
+                    <label>Hourly Rate (Local Currency)</label>
+                    <input className="form-input" type="number" min={0} placeholder="500" value={form.proposed_hourly_rate} onChange={e => set('proposed_hourly_rate', e.target.value)} />
                   </div>
                   <div className="form-group">
-                    <label>{t('apply.zone.hours')}</label>
-                    <input className="form-input" placeholder={t('apply.zone.hoursPlaceholder')} value={form.operating_hours} onChange={e => set('operating_hours', e.target.value)} />
+                    <label>Operating Hours</label>
+                    <input className="form-input" placeholder="24/7 or 7AM - 9PM" value={form.operating_hours} onChange={e => set('operating_hours', e.target.value)} />
                   </div>
                   <div className="form-group">
-                    <label>{t('apply.zone.surface')}</label>
+                    <label>Surface Type</label>
                     <select className="form-select" value={form.parking_surface} onChange={e => set('parking_surface', e.target.value)}>
-                      <option value="paved">{t('apply.zone.surfaceOptions.paved')}</option>
-                      <option value="gravel">{t('apply.zone.surfaceOptions.gravel')}</option>
-                      <option value="indoor">{t('apply.zone.surfaceOptions.indoor')}</option>
+                      <option value="paved">Paved / Concrete</option>
+                      <option value="gravel">Gravel / Dirt</option>
+                      <option value="indoor">Indoor / Garage</option>
                     </select>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 24, margin: '8px 0 20px' }}>
                   <label className="form-checkbox">
                     <input type="checkbox" checked={form.has_security} onChange={e => set('has_security', e.target.checked)} />
-                    <span>{t('apply.zone.security')}</span>
+                    <span>Security Guard on-site</span>
                   </label>
                   <label className="form-checkbox">
                     <input type="checkbox" checked={form.has_cctv} onChange={e => set('has_cctv', e.target.checked)} />
-                    <span>{t('apply.zone.cctv')}</span>
+                    <span>CCTV Cameras installed</span>
                   </label>
                 </div>
                 <div className="form-group">
-                  <label>{t('apply.zone.instructions')}</label>
-                  <textarea className="form-textarea" placeholder={t('apply.zone.instructionsPlaceholder')} value={form.access_instructions} onChange={e => set('access_instructions', e.target.value)} />
+                  <label>Access Instructions (optional)</label>
+                  <textarea className="form-textarea" placeholder="How should drivers find or enter the space?" value={form.access_instructions} onChange={e => set('access_instructions', e.target.value)} />
                 </div>
               </div>
             )}
@@ -204,24 +189,19 @@ export default function ApplyPage() {
             {/* Step 2 — Map */}
             {step === 2 && (
               <div className="animate-in">
-                <h2 style={{ marginBottom: 8, fontSize: 22, fontWeight: 700 }}>{t('apply.map.title')}</h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 20 }}>{t('apply.map.sub')}</p>
+                <h2 style={{ marginBottom: 8, fontSize: 22, fontWeight: 700 }}>Pin Your Zone Location</h2>
+                <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 20 }}>Click on the map to drop a pin exactly where your parking space is located.</p>
                 {selectedPos && (
                   <div className="alert alert-success" style={{ marginBottom: 16 }}>
-                    <CheckCircle2 size={18} /> {t('apply.map.success', { lat: selectedPos.lat.toFixed(6), lng: selectedPos.lng.toFixed(6) })}
+                    <CheckCircle2 size={18} /> Location pinned at {selectedPos.lat.toFixed(6)}, {selectedPos.lng.toFixed(6)}
                   </div>
                 )}
-                <div className="map-container" style={{ position: 'relative' }}>
-                  <MapContainer center={[5.0, 20.0]} zoom={3} style={{ height: '100%', width: '100%' }}>
+                <div className="map-container">
+                  <MapContainer center={[-1.286389, 36.817223]} zoom={13} style={{ height: '100%', width: '100%' }}>
                     <TileLayer
                       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                       attribution='© <a href="https://openstreetmap.org">OpenStreetMap</a>'
                     />
-                    <LocateControl onLocationFound={pos => {
-                      setSelectedPos(pos);
-                      set('latitude', pos.lat.toFixed(6));
-                      set('longitude', pos.lng.toFixed(6));
-                    }} />
                     <MapPicker
                       onLocationSelect={pos => {
                         setSelectedPos(pos);
@@ -238,20 +218,20 @@ export default function ApplyPage() {
             {/* Step 3 — Docs & Submit */}
             {step === 3 && (
               <div className="animate-in">
-                <h2 style={{ marginBottom: 8, fontSize: 22, fontWeight: 700 }}>{t('apply.review.title')}</h2>
-                <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 24 }}>{t('apply.review.sub')}</p>
+                <h2 style={{ marginBottom: 8, fontSize: 22, fontWeight: 700 }}>Review & Submit</h2>
+                <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 24 }}>Optionally upload proof of ownership, then submit your application.</p>
 
                 <div className="glass-card" style={{ padding: 20, marginBottom: 24 }}>
                   {[
-                    [t('apply.review.summary.applicant'), form.applicant_name],
-                    [t('apply.review.summary.email'), form.applicant_email],
-                    [t('apply.review.summary.phone'), form.applicant_phone],
-                    [t('apply.review.summary.zoneName'), form.proposed_name],
-                    [t('apply.review.summary.address'), form.address],
-                    [t('apply.review.summary.slots'), form.total_slots],
-                    [t('apply.review.summary.rate'), form.proposed_hourly_rate],
-                    [t('apply.review.summary.hours'), form.operating_hours],
-                    [t('apply.review.summary.location'), form.latitude ? `${form.latitude}, ${form.longitude}` : '—'],
+                    ['Applicant', form.applicant_name],
+                    ['Email', form.applicant_email],
+                    ['Phone', form.applicant_phone],
+                    ['Zone Name', form.proposed_name],
+                    ['Address', form.address],
+                    ['Slots', form.total_slots],
+                    ['Hourly Rate', form.proposed_hourly_rate],
+                    ['Hours', form.operating_hours],
+                    ['Location', form.latitude ? `${form.latitude}, ${form.longitude}` : '—'],
                   ].map(([k, v]) => (
                     <div key={k} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--border)', fontSize: 14 }}>
                       <span style={{ color: 'var(--text-muted)' }}>{k}</span>
@@ -261,41 +241,28 @@ export default function ApplyPage() {
                 </div>
 
                 <div className="form-group">
-                  <label>{t('apply.review.upload')}</label>
-                  <input type="file" ref={fileRef} style={{ color: 'var(--text-secondary)', fontSize: 14 }}
-                    onChange={e => set('documents', e.target.files[0])} />
+                  <label>Zone Photo (Used in the App)</label>
+                  <input type="file" accept="image/*" style={{ color: 'var(--text-secondary)', fontSize: 14 }}
+                    onChange={e => set('zone_picture', e.target.files[0])} />
                 </div>
 
-                <div className="terms-section">
-                  <h3>{t('apply.review.terms')}</h3>
-                  <div className="terms-content">
-                    <p>{t('apply.review.terms_text')}</p>
-                    <ul>
-                      <li><strong>{t('apply.review.terms_list.accuracy').split(':')[0]}:</strong>{t('apply.review.terms_list.accuracy').split(':')[1]}</li>
-                      <li><strong>{t('apply.review.terms_list.ownership').split(':')[0]}:</strong>{t('apply.review.terms_list.ownership').split(':')[1]}</li>
-                      <li><strong>{t('apply.review.terms_list.safety').split(':')[0]}:</strong>{t('apply.review.terms_list.safety').split(':')[1]}</li>
-                      <li><strong>{t('apply.review.terms_list.compliance').split(':')[0]}:</strong>{t('apply.review.terms_list.compliance').split(':')[1]}</li>
-                      <li><strong>{t('apply.review.terms_list.fees').split(':')[0]}:</strong>{t('apply.review.terms_list.fees').split(':')[1]}</li>
-                      <li><strong>{t('apply.review.terms_list.termination').split(':')[0]}:</strong>{t('apply.review.terms_list.termination').split(':')[1]}</li>
-                    </ul>
-                  </div>
-                  <label className="form-checkbox" style={{ marginTop: 16 }}>
-                    <input type="checkbox" checked={acceptedTerms} onChange={e => setAcceptedTerms(e.target.checked)} />
-                    <span style={{ fontWeight: 600 }}>{t('apply.review.agree')}</span>
-                  </label>
+                <div className="form-group">
+                  <label>Proof of Ownership / ID (optional)</label>
+                  <input type="file" ref={fileRef} style={{ color: 'var(--text-secondary)', fontSize: 14 }}
+                    onChange={e => set('documents', e.target.files[0])} />
                 </div>
               </div>
             )}
 
             <div className="apply-nav">
               {step > 0
-                ? <button className="btn-secondary" onClick={() => { setError(''); setStep(s => s - 1); }}>← {t('apply.nav.back')}</button>
+                ? <button className="btn-secondary" onClick={() => { setError(''); setStep(s => s - 1); }}>← Back</button>
                 : <div />
               }
               {step < STEPS.length - 1
-                ? <button className="btn-primary" onClick={handleNext}><span>{t('apply.nav.next')} →</span></button>
-                : <button className="btn-primary" onClick={handleSubmit} disabled={loading || !acceptedTerms}>
-                    <span>{loading ? t('apply.nav.submitting') : t('apply.nav.submit')}</span>
+                ? <button className="btn-primary" onClick={handleNext}><span>Next →</span></button>
+                : <button className="btn-primary" onClick={handleSubmit} disabled={loading}>
+                    <span>{loading ? 'Submitting...' : 'Submit Application'}</span>
                   </button>
               }
             </div>
