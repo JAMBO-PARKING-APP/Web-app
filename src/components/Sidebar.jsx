@@ -1,11 +1,13 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
-import { LayoutDashboard, PlusCircle, KeyRound, LogOut, Sun, Moon, Landmark } from 'lucide-react';
+import { LayoutDashboard, PlusCircle, KeyRound, LogOut, Sun, Moon, Landmark, Settings, DollarSign } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const NAV_ITEMS = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/add-zone', icon: PlusCircle, label: 'Add New Zone' },
+  { to: '/manage-zones', icon: Settings, label: 'Manage Zones' },
+  { to: '/pricing-rules', icon: DollarSign, label: 'Pricing Rules' },
   { to: '/bank-details', icon: Landmark, label: 'Bank Details' },
   { to: '/change-password', icon: KeyRound, label: 'Change Password' },
 ];
