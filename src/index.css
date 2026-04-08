@@ -285,11 +285,10 @@ body {
   .btn-primary {
     padding: 14px 20px;
     font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
   }
-}
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
 }
 .btn-primary::before {
   content: '';
