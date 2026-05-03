@@ -17,11 +17,13 @@ import ChangePasswordPage from './pages/ChangePasswordPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import HowItWorksPage from './pages/HowItWorksPage';
+import LanguageSelector from './components/LanguageSelector';
 import './index.css';
 
 export default function App() {
   return (
     <AuthProvider>
+      <LanguageSelector />
       <BrowserRouter>
         <Routes>
           {/* Public */}

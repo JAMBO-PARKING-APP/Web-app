@@ -1,13 +1,23 @@
 import { Link } from 'react-router-dom';
 import { Rocket, FileText, CheckCircle2, Banknote, BarChart3, Landmark, Map, ShieldCheck, Smartphone, Search, CreditCard, Timer, Bell } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
-function FeatureCard({ icon, title, desc }) {
+function FeatureCard({ icon, title, desc, delay = 0 }) {
   return (
-    <div className="glass-card" style={{ padding: '28px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+    <motion.div 
+      className="glass-card" 
+      style={{ padding: '28px', display: 'flex', flexDirection: 'column', gap: '14px' }}
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.4, delay }}
+      whileHover={{ y: -5 }}
+    >
       <div style={{ fontSize: 32 }}>{icon}</div>
       <h3 style={{ fontSize: 18, fontWeight: 700 }}>{title}</h3>
       <p style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.8 }}>{desc}</p>
-    </div>
+    </motion.div>
   );
 }
 
@@ -23,62 +33,89 @@ function AppStoreBadge({ platform, imgSrc, href, height = 52 }) {
 }
 
 export default function LandingPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar">
+      <motion.nav 
+        className="navbar"
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <Link to="/" className="navbar-logo">
           <img src="/logo.png" alt="Space Park" style={{ height: 38, objectFit: 'contain' }} />
           <span>Space Park</span>
         </Link>
         <div className="navbar-links">
-          <Link to="/how-it-works">How It Works</Link>
-          <a href="#benefits">Benefits</a>
-          <a href="#download">Get the App</a>
-          <Link to="/status">Check Status</Link>
-          <Link to="/login" style={{ color: 'var(--accent-light)', fontWeight: 600 }}>Partner Login</Link>
+          <Link to="/how-it-works">{t('nav.howItWorks', 'How It Works')}</Link>
+          <a href="#benefits">{t('nav.benefits', 'Benefits')}</a>
+          <a href="#download">{t('nav.getApp', 'Get the App')}</a>
+          <Link to="/status">{t('nav.checkStatus', 'Check Status')}</Link>
+          <Link to="/login" style={{ color: 'var(--accent-light)', fontWeight: 600 }}>{t('nav.partnerLogin', 'Partner Login')}</Link>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* ── Hero ── */}
       <section className="hero-section">
         <div className="hero-bg" />
         <div className="hero-grid" />
-        <div className="hero-content">
-          <div className="hero-badge">
+        <motion.div 
+          className="hero-content"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <motion.div 
+            className="hero-badge"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <span style={{ display: 'flex' }}><Rocket size={16} /></span>
-            <span>Earn passive income from your parking space</span>
-          </div>
+            <span>{t('hero.badge', 'Earn passive income from your parking space')}</span>
+          </motion.div>
           <h1 className="hero-title">
-            Turn Your Space Into<br />
-            <span className="gradient-text">Real Income</span>
+            {t('hero.title1', 'Turn Your Space Into')}<br />
+            <span className="gradient-text">{t('hero.title2', 'Real Income')}</span>
           </h1>
           <p className="hero-sub">
-            List your parking space on Space Park and earn money every time someone parks.
-            Real-time analytics, automatic payouts, and total control — all in your partner dashboard.
+            {t('hero.subtitle', 'List your parking space on Space Park and earn money every time someone parks. Real-time analytics, automatic payouts, and total control — all in your partner dashboard.')}
           </p>
-          <div className="hero-actions">
+          <motion.div 
+            className="hero-actions"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
             <Link to="/apply" className="btn-primary">
-              <span>Apply Now — Free</span><span>→</span>
+              <span>{t('hero.applyNow', 'Apply Now — Free')}</span><span>→</span>
             </Link>
-            <Link to="/how-it-works" className="btn-secondary">Learn How It Works</Link>
-          </div>
-        </div>
+            <Link to="/how-it-works" className="btn-secondary">{t('hero.learnMore', 'Learn How It Works')}</Link>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* ── Stats bar ── */}
       <div style={{ background: 'rgba(255,255,255,0.02)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)', padding: '32px 40px' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', gap: 24 }}>
           {[
-            { val: '500+', label: 'Partner Zones' },
-            { val: '50K+', label: 'Monthly Parkers' },
-            { val: '10%', label: 'Commission Only' },
-            { val: '2–5 Days', label: 'Approval Time' },
-          ].map(s => (
-            <div key={s.label}>
+            { val: '500+', label: t('stats.partners', 'Partner Zones') },
+            { val: '50K+', label: t('stats.parkers', 'Monthly Parkers') },
+            { val: '10%', label: t('stats.commission', 'Commission Only') },
+            { val: '2–5 Days', label: t('stats.approval', 'Approval Time') },
+          ].map((s, idx) => (
+            <motion.div 
+              key={s.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+            >
               <div style={{ fontSize: 32, fontWeight: 900, background: 'linear-gradient(135deg,#fff,var(--accent-light))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{s.val}</div>
               <div style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 4 }}>{s.label}</div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -95,13 +132,22 @@ export default function LandingPage() {
             { n: '1', icon: <FileText size={24} />, title: 'Submit Your Application', desc: 'Fill in your space details, pin your location on the map, and upload proof of ownership — takes under 5 minutes.' },
             { n: '2', icon: <CheckCircle2 size={24} />, title: 'Get Approved in Days', desc: 'Our team reviews within 2–5 business days. Check your status with your Application ID. You\'ll get login credentials by email.' },
             { n: '3', icon: <Banknote size={24} />, title: 'Earn Automatically', desc: 'Your zone goes live immediately. Monitor earnings, sessions, and performance from your dedicated partner dashboard.' },
-          ].map(s => (
-            <div key={s.n} className="glass-card" style={{ padding: 32, textAlign: 'center' }}>
+          ].map((s, idx) => (
+            <motion.div 
+              key={s.n} 
+              className="glass-card" 
+              style={{ padding: 32, textAlign: 'center' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: idx * 0.15 }}
+              whileHover={{ y: -5 }}
+            >
               <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'linear-gradient(135deg,var(--accent),#8b5cf6)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, margin: '0 auto 16px' }}>{s.icon}</div>
               <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--accent-light)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>Step {s.n}</div>
               <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 10 }}>{s.title}</h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.8 }}>{s.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: 32 }}>
@@ -119,12 +165,12 @@ export default function LandingPage() {
             <h2 className="section-title">Everything You Need to Succeed</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
-            <FeatureCard icon={<Banknote size={32} color="var(--success)" />} title="Keep 90% of Earnings" desc="We charge a transparent 10% commission — no hidden fees, no setup costs, no monthly charges. What you earn is yours." />
-            <FeatureCard icon={<BarChart3 size={32} color="var(--accent-light)" />} title="Real-Time Analytics" desc="Monitor occupancy rates, session history, and daily earnings with a beautiful, purpose-built partner dashboard." />
-            <FeatureCard icon={<Landmark size={32} color="var(--warning)" />} title="Automatic Bank Payouts" desc="Link your bank account once and receive automatic deposits — no manual withdrawal process required." />
-            <FeatureCard icon={<Map size={32} color="#c084fc" />} title="Instant App Visibility" desc="Your zone appears on the Space Park mobile app the moment it's approved, visible to thousands of drivers searching for parking daily." />
-            <FeatureCard icon={<ShieldCheck size={32} color="var(--success)" />} title="Verified & Trusted" desc="Every listed space is verified by our team, giving drivers confidence and driving higher occupancy for your zone." />
-            <FeatureCard icon={<Smartphone size={32} color="var(--accent)" />} title="Self-Service Management" desc="Update your hourly rate, operating hours, and zone details from your dashboard anytime, without needing to contact support." />
+            <FeatureCard delay={0.1} icon={<Banknote size={32} color="var(--success)" />} title="Keep 90% of Earnings" desc="We charge a transparent 10% commission — no hidden fees, no setup costs, no monthly charges. What you earn is yours." />
+            <FeatureCard delay={0.2} icon={<BarChart3 size={32} color="var(--accent-light)" />} title="Real-Time Analytics" desc="Monitor occupancy rates, session history, and daily earnings with a beautiful, purpose-built partner dashboard." />
+            <FeatureCard delay={0.3} icon={<Landmark size={32} color="var(--warning)" />} title="Automatic Bank Payouts" desc="Link your bank account once and receive automatic deposits — no manual withdrawal process required." />
+            <FeatureCard delay={0.4} icon={<Map size={32} color="#c084fc" />} title="Instant App Visibility" desc="Your zone appears on the Space Park mobile app the moment it's approved, visible to thousands of drivers searching for parking daily." />
+            <FeatureCard delay={0.5} icon={<ShieldCheck size={32} color="var(--success)" />} title="Verified & Trusted" desc="Every listed space is verified by our team, giving drivers confidence and driving higher occupancy for your zone." />
+            <FeatureCard delay={0.6} icon={<Smartphone size={32} color="var(--accent)" />} title="Self-Service Management" desc="Update your hourly rate, operating hours, and zone details from your dashboard anytime, without needing to contact support." />
           </div>
         </div>
       </section>
