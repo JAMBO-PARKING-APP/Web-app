@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
-import { Rocket, FileText, CheckCircle2, Banknote, BarChart3, Landmark, Map, ShieldCheck, Smartphone, Search, CreditCard, Timer, Bell } from 'lucide-react';
+import { Rocket, FileText, CheckCircle2, Banknote, BarChart3, Landmark, Map as MapIcon, ShieldCheck, Smartphone, Search, CreditCard, Timer, Bell, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 function FeatureCard({ icon, title, desc, delay = 0 }) {
   return (
-    <motion.div 
-      className="glass-card" 
+    <motion.div
+      className="glass-card"
       style={{ padding: '28px', display: 'flex', flexDirection: 'column', gap: '14px' }}
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -34,11 +37,34 @@ function AppStoreBadge({ platform, imgSrc, href, height = 52 }) {
 
 export default function LandingPage() {
   const { t } = useTranslation();
+  const [liveData, setLiveData] = useState({ total_zones: 0, total_sessions: 0, zones: [] });
+  const [userLocation, setUserLocation] = useState(null);
+  const [countryCode, setCountryCode] = useState('');
+  const [isLoadingStats, setIsLoadingStats] = useState(true);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => setUserLocation([pos.coords.latitude, pos.coords.longitude]),
+        (err) => console.log('Geolocation error:', err)
+      );
+    }
+
+    axios.get('https://ipapi.co/json/')
+      .then(res => {
+        const cCode = res.data.country_code;
+        setCountryCode(cCode);
+        return axios.get(`https://backend-p-space.ai/api/parking/public/stats/?country=${cCode}`);
+      })
+      .then(res => setLiveData(res.data))
+      .catch(err => console.error('Error fetching live stats:', err))
+      .finally(() => setIsLoadingStats(false));
+  }, []);
 
   return (
     <>
       {/* Navbar */}
-      <motion.nav 
+      <motion.nav
         className="navbar"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -61,13 +87,13 @@ export default function LandingPage() {
       <section className="hero-section">
         <div className="hero-bg" />
         <div className="hero-grid" />
-        <motion.div 
+        <motion.div
           className="hero-content"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <motion.div 
+          <motion.div
             className="hero-badge"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -83,7 +109,7 @@ export default function LandingPage() {
           <p className="hero-sub">
             {t('hero.subtitle', 'List your parking space on Space Park and earn money every time someone parks. Real-time analytics, automatic payouts, and total control — all in your partner dashboard.')}
           </p>
-          <motion.div 
+          <motion.div
             className="hero-actions"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -106,7 +132,7 @@ export default function LandingPage() {
             { val: '10%', label: t('stats.commission', 'Commission Only') },
             { val: '2–5 Days', label: t('stats.approval', 'Approval Time') },
           ].map((s, idx) => (
-            <motion.div 
+            <motion.div
               key={s.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -119,6 +145,70 @@ export default function LandingPage() {
           ))}
         </div>
       </div>
+
+      {/* ── Live Stats & Map ── */}
+      <section className="section" style={{ background: 'rgba(99,102,241,0.03)', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
+          <div style={{ textAlign: 'center', marginBottom: 56 }}>
+            <p className="section-eyebrow">{countryCode ? `Live in ${countryCode}` : 'Live Stats'}</p>
+            <h2 className="section-title">Available Near You</h2>
+            <p className="section-sub" style={{ margin: '0 auto' }}>Discover parking zones available in your country and join thousands of completed sessions.</p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 32, alignItems: 'start' }}>
+            {/* Live Numbers */}
+            <div style={{ display: 'grid', gap: 24 }}>
+              <div className="glass-card" style={{ padding: 32, textAlign: 'center' }}>
+                <div style={{ fontSize: 48, fontWeight: 900, color: 'var(--accent-light)' }}>
+                  {isLoadingStats ? '...' : liveData.total_zones}
+                </div>
+                <div style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-secondary)' }}>Active Zones</div>
+                <p style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 8 }}>Ready for you to park</p>
+              </div>
+              <div className="glass-card" style={{ padding: 32, textAlign: 'center' }}>
+                <div style={{ fontSize: 48, fontWeight: 900, color: 'var(--success)' }}>
+                  {isLoadingStats ? '...' : liveData.total_sessions.toLocaleString()}
+                </div>
+                <div style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-secondary)' }}>Sessions Completed</div>
+                <p style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 8 }}>Powered by Space Park</p>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div className="glass-card" style={{ height: 400, overflow: 'hidden', padding: 8 }}>
+              <MapContainer
+                key={userLocation ? userLocation.join(',') : 'default'}
+                center={userLocation || [0.347596, 32.582520]} // Fallback to Kampala
+                zoom={userLocation ? 12 : 3}
+                style={{ height: '100%', width: '100%', borderRadius: 16 }}
+              >
+                <TileLayer
+                  url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                />
+                {liveData.zones.map(zone => (
+                  <Marker key={zone.id} position={[zone.latitude, zone.longitude]}>
+                    <Popup>
+                      <div style={{ padding: 8, textAlign: 'center' }}>
+                        <h4 style={{ margin: '0 0 8px', fontWeight: 700, color: '#333' }}>{zone.name}</h4>
+                        <p style={{ margin: '0 0 12px', fontSize: 13, color: '#666' }}>Rate: {zone.hourly_rate}/hr</p>
+                        <a
+                          href={zone.google_maps_url || `https://www.google.com/maps/dir/?api=1&destination=${zone.latitude},${zone.longitude}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ display: 'inline-block', background: '#6366f1', color: '#fff', padding: '6px 12px', borderRadius: 4, textDecoration: 'none', fontSize: 12, fontWeight: 600 }}
+                        >
+                          Navigate Here
+                        </a>
+                      </div>
+                    </Popup>
+                  </Marker>
+                ))}
+              </MapContainer>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── How it works teaser ── */}
       <section className="section">
@@ -133,9 +223,9 @@ export default function LandingPage() {
             { n: '2', icon: <CheckCircle2 size={24} />, title: 'Get Approved in Days', desc: 'Our team reviews within 2–5 business days. Check your status with your Application ID. You\'ll get login credentials by email.' },
             { n: '3', icon: <Banknote size={24} />, title: 'Earn Automatically', desc: 'Your zone goes live immediately. Monitor earnings, sessions, and performance from your dedicated partner dashboard.' },
           ].map((s, idx) => (
-            <motion.div 
-              key={s.n} 
-              className="glass-card" 
+            <motion.div
+              key={s.n}
+              className="glass-card"
               style={{ padding: 32, textAlign: 'center' }}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +242,7 @@ export default function LandingPage() {
         </div>
         <div style={{ textAlign: 'center', marginTop: 32 }}>
           <Link to="/how-it-works" style={{ color: 'var(--accent-light)', textDecoration: 'none', fontWeight: 600, fontSize: 15 }}>
-            View full guide → 
+            View full guide →
           </Link>
         </div>
       </section>
@@ -251,10 +341,10 @@ export default function LandingPage() {
             allow="geolocation; microphone; camera"
             src="https://form.jotform.com/260734183295057"
             frameBorder="0"
-            style={{ 
-              width: "100%", 
-              height: "1200px", 
-              border: "none" 
+            style={{
+              width: "100%",
+              height: "1200px",
+              border: "none"
             }}
             scrolling="yes"
           />
